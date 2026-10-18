@@ -241,6 +241,11 @@ Search.appendIndex(
             "summary": "Get\u0020next\u0020free\u0020slot\u0020for\u0020comment\u0020from\u0020the\u0020creation\u0020timestamp",
             "url": "classes/PrivateBin-Data-AbstractData.html#method_getOpenSlot"
         },                {
+            "fqsen": "\\PrivateBin\\Data\\AbstractData\u003A\u003AsortComments\u0028\u0029",
+            "name": "sortComments",
+            "summary": "Sort\u0020comments\u0020chronologically,\u0020including\u0020collision\u0020suffixes.",
+            "url": "classes/PrivateBin-Data-AbstractData.html#method_sortComments"
+        },                {
             "fqsen": "\\PrivateBin\\Data\\AbstractData\u003A\u003A\u0024_last_cache",
             "name": "_last_cache",
             "summary": "cache\u0020for\u0020the\u0020traffic\u0020limiter",
@@ -496,6 +501,16 @@ Search.appendIndex(
             "summary": "rename\u0020a\u0020file,\u0020prepending\u0020the\u0020protection\u0020line\u0020at\u0020the\u0020beginning",
             "url": "classes/PrivateBin-Data-Filesystem.html#method__prependRename"
         },                {
+            "fqsen": "\\PrivateBin\\Data\\Filesystem\u003A\u003AHTACCESS_LINE",
+            "name": "HTACCESS_LINE",
+            "summary": "line\u0020in\u0020generated\u0020.htaccess\u0020files,\u0020to\u0020protect\u0020exposed\u0020directories\u0020from\u0020being\u0020browsable\u0020on\u0020apache\u0020web\u0020servers",
+            "url": "classes/PrivateBin-Data-Filesystem.html#constant_HTACCESS_LINE"
+        },                {
+            "fqsen": "\\PrivateBin\\Data\\Filesystem\u003A\u003AID_PATTERN",
+            "name": "ID_PATTERN",
+            "summary": "ID\u0020glob\u0028\u0029\u0020pattern\u0020of\u0020valid\u0020document\u0020IDs\u0020as\u0020well\u0020as\u0020parent\u0020and\u0020comment\u0020IDs\n16\u0020lower\u0020case\u0020characters\u0020for\u00208\u0020bytes\u0020in\u0020hexadecimal\u0020encoding",
+            "url": "classes/PrivateBin-Data-Filesystem.html#constant_ID_PATTERN"
+        },                {
             "fqsen": "\\PrivateBin\\Data\\Filesystem\u003A\u003APASTE_FILE_PATTERN",
             "name": "PASTE_FILE_PATTERN",
             "summary": "glob\u0028\u0029\u0020pattern\u0020of\u0020the\u0020two\u0020folder\u0020levels\u0020and\u0020the\u0020paste\u0020files\u0020under\u0020the\nconfigured\u0020path.\u0020Needs\u0020to\u0020return\u0020both\u0020files\u0020with\u0020and\u0020without\u0020.php\u0020suffix,\nso\u0020they\u0020can\u0020be\u0020hardened\u0020by\u0020_prependRename\u0028\u0029,\u0020which\u0020is\u0020hooked\u0020into\u0020exists\u0028\u0029.",
@@ -505,11 +520,6 @@ Search.appendIndex(
             "name": "PROTECTION_LINE",
             "summary": "first\u0020line\u0020in\u0020paste\u0020or\u0020comment\u0020files,\u0020to\u0020protect\u0020their\u0020contents\u0020from\u0020browsing\u0020exposed\u0020data\u0020directories",
             "url": "classes/PrivateBin-Data-Filesystem.html#constant_PROTECTION_LINE"
-        },                {
-            "fqsen": "\\PrivateBin\\Data\\Filesystem\u003A\u003AHTACCESS_LINE",
-            "name": "HTACCESS_LINE",
-            "summary": "line\u0020in\u0020generated\u0020.htaccess\u0020files,\u0020to\u0020protect\u0020exposed\u0020directories\u0020from\u0020being\u0020browsable\u0020on\u0020apache\u0020web\u0020servers",
-            "url": "classes/PrivateBin-Data-Filesystem.html#constant_HTACCESS_LINE"
         },                {
             "fqsen": "\\PrivateBin\\Data\\Filesystem\u003A\u003A\u0024_path",
             "name": "_path",
@@ -790,6 +800,11 @@ Search.appendIndex(
             "name": "getBrowserLanguages",
             "summary": "detect\u0020the\u0020clients\u0020supported\u0020languages\u0020and\u0020return\u0020them\u0020ordered\u0020by\u0020preference",
             "url": "classes/PrivateBin-I18n.html#method_getBrowserLanguages"
+        },                {
+            "fqsen": "\\PrivateBin\\I18n\u003A\u003A_normalizeBrowserLanguages\u0028\u0029",
+            "name": "_normalizeBrowserLanguages",
+            "summary": "normalize\u0020browser\u0020language\u0020aliases\u0020to\u0020available\u0020locale\u0020IDs",
+            "url": "classes/PrivateBin-I18n.html#method__normalizeBrowserLanguages"
         },                {
             "fqsen": "\\PrivateBin\\I18n\u003A\u003AgetLanguage\u0028\u0029",
             "name": "getLanguage",
@@ -1291,10 +1306,35 @@ Search.appendIndex(
             "summary": "error\u0020message",
             "url": "classes/PrivateBin-Proxy-AbstractProxy.html#property__error"
         },                {
+            "fqsen": "\\PrivateBin\\Proxy\\AbstractProxy\u003A\u003A\u0024_proxyUrl",
+            "name": "_proxyUrl",
+            "summary": "proxy\u0020URL",
+            "url": "classes/PrivateBin-Proxy-AbstractProxy.html#property__proxyUrl"
+        },                {
             "fqsen": "\\PrivateBin\\Proxy\\AbstractProxy\u003A\u003A\u0024_url",
             "name": "_url",
             "summary": "shortened\u0020URL",
             "url": "classes/PrivateBin-Proxy-AbstractProxy.html#property__url"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\ChhotoProxy",
+            "name": "ChhotoProxy",
+            "summary": "ChhotoProxy",
+            "url": "classes/PrivateBin-Proxy-ChhotoProxy.html"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\ChhotoProxy\u003A\u003A_getProxyUrl\u0028\u0029",
+            "name": "_getProxyUrl",
+            "summary": "Overrides\u0020the\u0020abstract\u0020parent\u0020function\u0020to\u0020get\u0020the\u0020proxy\u0020URL.",
+            "url": "classes/PrivateBin-Proxy-ChhotoProxy.html#method__getProxyUrl"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\ChhotoProxy\u003A\u003A_getProxyPayload\u0028\u0029",
+            "name": "_getProxyPayload",
+            "summary": "Overrides\u0020the\u0020abstract\u0020parent\u0020function\u0020to\u0020get\u0020contents\u0020from\u0020Chhoto\u0020API.",
+            "url": "classes/PrivateBin-Proxy-ChhotoProxy.html#method__getProxyPayload"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\ChhotoProxy\u003A\u003A_extractShortUrl\u0028\u0029",
+            "name": "_extractShortUrl",
+            "summary": "Extracts\u0020the\u0020short\u0020URL\u0020from\u0020the\u0020Chhoto\u0020API\u0020response.",
+            "url": "classes/PrivateBin-Proxy-ChhotoProxy.html#method__extractShortUrl"
         },                {
             "fqsen": "\\PrivateBin\\Proxy\\ShlinkProxy",
             "name": "ShlinkProxy",
