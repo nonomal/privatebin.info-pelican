@@ -1,8 +1,8 @@
-FROM orthanc2/pelican:pelican-4.12_python-3.14
+FROM orthanc2/pelican:pelican-4.12_python-3.15
 COPY . /work/
 RUN pelican content -o output -s publishconf.py
 
-FROM nginx:1.30.5-alpine-slim
+FROM nginx:1.30.6-alpine-slim
 LABEL maintainer="elrido@gmx.net"
 WORKDIR /srv
 COPY --from=0 /work/output/ /usr/share/nginx/html/
