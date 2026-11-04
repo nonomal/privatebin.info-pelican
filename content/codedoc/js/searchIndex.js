@@ -791,6 +791,11 @@ Search.appendIndex(
             "summary": "loads\u0020translations",
             "url": "classes/PrivateBin-I18n.html#method_loadTranslations"
         },                {
+            "fqsen": "\\PrivateBin\\I18n\u003A\u003A_getLanguageFromHttpHeader\u0028\u0029",
+            "name": "_getLanguageFromHttpHeader",
+            "summary": "get\u0020languages\u0020bsed\u0020on\u0020the\u0020HTTP\u0020header",
+            "url": "classes/PrivateBin-I18n.html#method__getLanguageFromHttpHeader"
+        },                {
             "fqsen": "\\PrivateBin\\I18n\u003A\u003AgetAvailableLanguages\u0028\u0029",
             "name": "getAvailableLanguages",
             "summary": "get\u0020list\u0020of\u0020available\u0020translations\u0020based\u0020on\u0020files\u0020found",
@@ -1015,6 +1020,11 @@ Search.appendIndex(
             "name": "getParentId",
             "summary": "Get\u0020parent\u0020ID.",
             "url": "classes/PrivateBin-Model-Comment.html#method_getParentId"
+        },                {
+            "fqsen": "\\PrivateBin\\Model\\Comment\u003A\u003A_validate\u0028\u0029",
+            "name": "_validate",
+            "summary": "Validate\u0020data.",
+            "url": "classes/PrivateBin-Model-Comment.html#method__validate"
         },                {
             "fqsen": "\\PrivateBin\\Model\\Comment\u003A\u003A_sanitize\u0028\u0029",
             "name": "_sanitize",
@@ -1445,6 +1455,11 @@ Search.appendIndex(
             "name": "MIME_XHTML",
             "summary": "MIME\u0020type\u0020for\u0020XHTML",
             "url": "classes/PrivateBin-Request.html#constant_MIME_XHTML"
+        },                {
+            "fqsen": "\\PrivateBin\\Request\u003A\u003A\u0024_bodyLength",
+            "name": "_bodyLength",
+            "summary": "Input\u0020stream\u0020length\u0020for\u0020size\u0020checks",
+            "url": "classes/PrivateBin-Request.html#property__bodyLength"
         },                {
             "fqsen": "\\PrivateBin\\Request\u003A\u003A\u0024_inputStream",
             "name": "_inputStream",

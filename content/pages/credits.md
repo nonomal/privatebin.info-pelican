@@ -50,7 +50,7 @@ For any **security issues** please contact us via [security@privatebin.org](mail
 ## Translations
 
 * Hexalyse - French
-* Kuba Niewiarowski - Polish
+* Kuba Niewiarowski, Mariusz Krzaczkowski - Polish
 * Gabbalo - German
 * Draky50110 - French
 * Filip Muki Dobranić - Slovene
@@ -83,3 +83,4 @@ For any **security issues** please contact us via [security@privatebin.org](mail
 * Edward205 - Romanian
 * babiloof - Swedish
 * Ali Fani - Persian
+* Peter Dave Hello - Chinese (Traditional)

@@ -7,7 +7,7 @@ save_as: index.html
 
 # ![PrivateBin]({static}/img/logo.png)
 
-*Current version: 2.1.0*
+*Current version: 2.1.1*
 
 **PrivateBin** is a minimalist, open source online
 [pastebin](https://en.wikipedia.org/wiki/Pastebin)
