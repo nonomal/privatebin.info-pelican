@@ -6,9 +6,14 @@ save_as: credits.html
 
 ## Active contributors
 
-* Simon Rupf - current developer and maintainer (git signing key [4096R/0F5C940A6BD81F92]({static}/key/elrido.asc))
-* rugk - security review, doc improvment, JS refactoring & various other stuff(git signing key [4096R/05D40A636AFAB34D]({static}/key/rugk.asc))
+* Simon Rupf - current developer and maintainer<br />
+  (git signing key [4096R/0F5C940A6BD81F92]({static}/key/elrido.asc))
+* rugk - security review, doc improvment, JS refactoring & various other stuff<br />
+  (git signing key [4096R/05D40A636AFAB34D]({static}/key/rugk.asc))
 * R4SAS - python client, compression, blob URI to support larger attachments
+* Mikhail Romanov - UI improvements, theme switching, clipboard support, multi-file upload, bugfixes, code refactoring<br />
+  (git signing key [4096R/ED4AE99DCA25A6BB]({static}/key/ribas160.asc))
+* Karthik Kasturi - shlink proxy and url shortening bugfixes
 
 Releases are signed with the key [git@privatebin.net]({static}/key/release.asc), `28CA 7C96 4938 EA5C 1481  D42A E11B 7950 E9E1 83DB`.
 
@@ -40,10 +45,12 @@ For any **security issues** please contact us via [security@privatebin.org](mail
 * Felix J. Ogris - S3 Storage backend, script for data backend migrations, dropped singleton behaviour of data backends
 * Mounir Idrassi & J. Mozdzen - secure YOURLS integration
 * Felipe Nakandakari - enabled AWS SDK to use default credential provider chain in the S3 Storage backend
+* Aaron Sherber - cache control headers for API calls & use of `shortenviayourls` in query parameters
 
 ## Translations
+
 * Hexalyse - French
-* Kuba Niewiarowski - Polish
+* Kuba Niewiarowski, Mariusz Krzaczkowski - Polish
 * Gabbalo - German
 * Draky50110 - French
 * Filip Muki Dobranić - Slovene
@@ -71,3 +78,9 @@ For any **security issues** please contact us via [security@privatebin.org](mail
 * Stevo984 - Slovak
 * Christos Karamolegkos - Greek
 * jaideejung007 - Thai
+* Nicolas Le Gall - Japanese
+* lazerns - Arabic
+* Edward205 - Romanian
+* babiloof - Swedish
+* Ali Fani - Persian
+* Peter Dave Hello - Chinese (Traditional)

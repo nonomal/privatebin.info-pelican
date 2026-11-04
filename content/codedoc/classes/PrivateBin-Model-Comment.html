@@ -65,11 +65,19 @@
                 
             </li>
                     <li>
+                <a href="namespaces/privatebin-exception.html" class="">Exception</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/privatebin-model.html" class="">Model</a>
                 
             </li>
                     <li>
                 <a href="namespaces/privatebin-persistence.html" class="">Persistence</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/privatebin-proxy.html" class="">Proxy</a>
                 
             </li>
             </ul>
@@ -129,7 +137,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/Comment.php"><a href="files/lib-model-comment.html"><abbr title="lib/Model/Comment.php">Comment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -154,6 +162,27 @@
 
 
 
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/PrivateBin-Model-Comment.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/PrivateBin-Model-AbstractModel.html#constant_COLLISION_ERROR">COLLISION_ERROR</a>
+    <span>
+        &nbsp;= &#039;You are unlucky. Try again.&#039;                            </span>
+</dt>
+<dd>show the same error message if the document ID already exists</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/PrivateBin-Model-AbstractModel.html#constant_INVALID_DATA_ERROR">INVALID_DATA_ERROR</a>
+    <span>
+        &nbsp;= &#039;Invalid data.&#039;                            </span>
+</dt>
+<dd>show the same error message if the data is invalid</dd>
+
+    </dl>
 
 
 <h4 id="toc-properties">
@@ -211,13 +240,6 @@
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Instance constructor.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/PrivateBin-Model-Comment.html#method_delete">delete()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>Delete the comment.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/PrivateBin-Model-Comment.html#method_exists">exists()</a>
@@ -299,12 +321,12 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/PrivateBin-Model-Comment.html#method__sanitize">_sanitize()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Sanitizes data to conform with current configuration.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/PrivateBin-Model-AbstractModel.html#method__validate">_validate()</a>
+    <a href="classes/PrivateBin-Model-Comment.html#method__validate">_validate()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
@@ -316,6 +338,103 @@
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/PrivateBin-Model-Comment.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_COLLISION_ERROR">
+        COLLISION_ERROR
+        <a href="classes/PrivateBin-Model-AbstractModel.html#constant_COLLISION_ERROR" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/AbstractModel.php"><a href="files/lib-model-abstractmodel.html"><abbr title="lib/Model/AbstractModel.php">AbstractModel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">37</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">show the same error message if the document ID already exists</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">COLLISION_ERROR</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;You are unlucky. Try again.&#039;</span>
+</code>
+
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/PrivateBin-Model-AbstractModel.html#constant_COLLISION_ERROR#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">const</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>string</p>
+</section>
+
+                                    </dd>
+                                            </dl>
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_INVALID_DATA_ERROR">
+        INVALID_DATA_ERROR
+        <a href="classes/PrivateBin-Model-AbstractModel.html#constant_INVALID_DATA_ERROR" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/AbstractModel.php"><a href="files/lib-model-abstractmodel.html"><abbr title="lib/Model/AbstractModel.php">AbstractModel.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">show the same error message if the data is invalid</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">INVALID_DATA_ERROR</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;Invalid data.&#039;</span>
+</code>
+
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/PrivateBin-Model-AbstractModel.html#constant_INVALID_DATA_ERROR#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">const</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>string</p>
+</section>
+
+                                    </dd>
+                                            </dl>
+
+</article>
+            </section>
 
         
     <section class="phpdocumentor-properties">
@@ -341,7 +460,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/AbstractModel.php"><a href="files/lib-model-abstractmodel.html"><abbr title="lib/Model/AbstractModel.php">AbstractModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -391,7 +510,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/AbstractModel.php"><a href="files/lib-model-abstractmodel.html"><abbr title="lib/Model/AbstractModel.php">AbstractModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -401,7 +520,7 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$_data</span>
-     = <span class="phpdocumentor-signature__default-value">array(&#039;meta&#039; =&gt; array())</span></code>
+     = <span class="phpdocumentor-signature__default-value">[&#039;meta&#039; =&gt; []]</span></code>
 
     
     
@@ -441,7 +560,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/AbstractModel.php"><a href="files/lib-model-abstractmodel.html"><abbr title="lib/Model/AbstractModel.php">AbstractModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -491,7 +610,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/AbstractModel.php"><a href="files/lib-model-abstractmodel.html"><abbr title="lib/Model/AbstractModel.php">AbstractModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -541,7 +660,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/Comment.php"><a href="files/lib-model-comment.html"><abbr title="lib/Model/Comment.php">Comment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
     </aside>
 
@@ -596,7 +715,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/AbstractModel.php"><a href="files/lib-model-abstractmodel.html"><abbr title="lib/Model/AbstractModel.php">AbstractModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
     </aside>
 
@@ -653,62 +772,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_delete">
-        delete()
-        <a href="classes/PrivateBin-Model-Comment.html#method_delete" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/Comment.php"><a href="files/lib-model-comment.html"><abbr title="lib/Model/Comment.php">Comment.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">81</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Delete the comment.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">delete</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/PrivateBin-Model-Comment.html#method_delete#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">access</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>public</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
-                                                            
-                                             
-                                    </dd>
-                                            </dl>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_exists">
         exists()
         <a href="classes/PrivateBin-Model-Comment.html#method_exists" class="headerlink"><i class="fas fa-link"></i></a>
@@ -717,7 +780,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/Comment.php"><a href="files/lib-model-comment.html"><abbr title="lib/Model/Comment.php">Comment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -769,7 +832,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/AbstractModel.php"><a href="files/lib-model-abstractmodel.html"><abbr title="lib/Model/AbstractModel.php">AbstractModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">133</span>
 
     </aside>
 
@@ -821,7 +884,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/AbstractModel.php"><a href="files/lib-model-abstractmodel.html"><abbr title="lib/Model/AbstractModel.php">AbstractModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -873,7 +936,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/Comment.php"><a href="files/lib-model-comment.html"><abbr title="lib/Model/Comment.php">Comment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">146</span>
+    <span class="phpdocumentor-element-found-in__line">153</span>
 
     </aside>
 
@@ -925,7 +988,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/Comment.php"><a href="files/lib-model-comment.html"><abbr title="lib/Model/Comment.php">Comment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -977,7 +1040,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/AbstractModel.php"><a href="files/lib-model-abstractmodel.html"><abbr title="lib/Model/AbstractModel.php">AbstractModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
@@ -1046,7 +1109,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/AbstractModel.php"><a href="files/lib-model-abstractmodel.html"><abbr title="lib/Model/AbstractModel.php">AbstractModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -1054,7 +1117,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1090,7 +1153,7 @@
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/PrivateBin-Exception-TranslatedException.html"><abbr title="\PrivateBin\Exception\TranslatedException">TranslatedException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1112,7 +1175,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/AbstractModel.php"><a href="files/lib-model-abstractmodel.html"><abbr title="lib/Model/AbstractModel.php">AbstractModel.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -1156,7 +1219,7 @@
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/PrivateBin-Exception-TranslatedException.html"><abbr title="\PrivateBin\Exception\TranslatedException">TranslatedException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1178,7 +1241,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/Comment.php"><a href="files/lib-model-comment.html"><abbr title="lib/Model/Comment.php">Comment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
@@ -1222,7 +1285,7 @@
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/PrivateBin-Exception-TranslatedException.html"><abbr title="\PrivateBin\Exception\TranslatedException">TranslatedException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1244,7 +1307,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/Comment.php"><a href="files/lib-model-comment.html"><abbr title="lib/Model/Comment.php">Comment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">108</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -1252,7 +1315,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setPaste</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PrivateBin-Model-Paste.html"><abbr title="\PrivateBin\Model\Paste">Paste</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$paste</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setPaste</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PrivateBin-Model-Paste.html"><abbr title="\PrivateBin\Model\Paste">Paste</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$paste</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1284,14 +1347,6 @@
 </section>
 
                                     </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
-                                                            
-                                             
-                                    </dd>
                                             </dl>
 
     
@@ -1310,7 +1365,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/Comment.php"><a href="files/lib-model-comment.html"><abbr title="lib/Model/Comment.php">Comment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -1344,7 +1399,7 @@
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/PrivateBin-Exception-TranslatedException.html"><abbr title="\PrivateBin\Exception\TranslatedException">TranslatedException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1366,7 +1421,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/Comment.php"><a href="files/lib-model-comment.html"><abbr title="lib/Model/Comment.php">Comment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 
     </aside>
 
@@ -1374,7 +1429,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">_sanitize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">_sanitize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1408,11 +1463,7 @@
                                     </dd>
                                             </dl>
 
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            </section>
-
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -1422,13 +1473,13 @@
 >
     <h4 class="phpdocumentor-element__name" id="method__validate">
         _validate()
-        <a href="classes/PrivateBin-Model-AbstractModel.html#method__validate" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/PrivateBin-Model-Comment.html#method__validate" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/AbstractModel.php"><a href="files/lib-model-abstractmodel.html"><abbr title="lib/Model/AbstractModel.php">AbstractModel.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Model/Comment.php"><a href="files/lib-model-comment.html"><abbr title="lib/Model/Comment.php">Comment.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">178</span>
+    <span class="phpdocumentor-element-found-in__line">168</span>
 
     </aside>
 
@@ -1436,7 +1487,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">_validate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">_validate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1455,7 +1506,7 @@
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="classes/PrivateBin-Model-AbstractModel.html#method__validate#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/PrivateBin-Model-Comment.html#method__validate#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -1472,7 +1523,7 @@
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/PrivateBin-Exception-TranslatedException.html"><abbr title="\PrivateBin\Exception\TranslatedException">TranslatedException</abbr></a></span>
                                                             
                                              
                                     </dd>
@@ -1585,10 +1636,18 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/PrivateBin-Model-Comment.html#toc-constants">Constants</a></li>
                                                             <li><a href="classes/PrivateBin-Model-Comment.html#toc-properties">Properties</a></li>
                                                             <li><a href="classes/PrivateBin-Model-Comment.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/PrivateBin-Model-AbstractModel.html#constant_COLLISION_ERROR">COLLISION_ERROR</a></li>
+                                                    <li><a href="classes/PrivateBin-Model-AbstractModel.html#constant_INVALID_DATA_ERROR">INVALID_DATA_ERROR</a></li>
+                                            </ul>
+                </li>
             
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
@@ -1605,7 +1664,6 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/PrivateBin-Model-AbstractModel.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/PrivateBin-Model-Comment.html#method_delete">delete()</a></li>
                                             <li><a href="classes/PrivateBin-Model-Comment.html#method_exists">exists()</a></li>
                                             <li><a href="classes/PrivateBin-Model-AbstractModel.html#method_get">get()</a></li>
                                             <li><a href="classes/PrivateBin-Model-AbstractModel.html#method_getId">getId()</a></li>
@@ -1618,7 +1676,7 @@
                                             <li><a href="classes/PrivateBin-Model-Comment.html#method_setPaste">setPaste()</a></li>
                                             <li><a href="classes/PrivateBin-Model-Comment.html#method_store">store()</a></li>
                                             <li><a href="classes/PrivateBin-Model-Comment.html#method__sanitize">_sanitize()</a></li>
-                                            <li><a href="classes/PrivateBin-Model-AbstractModel.html#method__validate">_validate()</a></li>
+                                            <li><a href="classes/PrivateBin-Model-Comment.html#method__validate">_validate()</a></li>
                                     </ul>
             </li>
                     </ul>

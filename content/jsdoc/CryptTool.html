@@ -93,7 +93,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line912">line 912</a>
+        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1033">line 1033</a>
     </li></ul></dd>
     
 
@@ -252,7 +252,7 @@ Iterates over the bytes of the array, catenating them into a string
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line975">line 975</a>
+        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1049">line 1049</a>
     </li></ul></dd>
     
 
@@ -411,7 +411,7 @@ Iterates over the bytes of the array, catenating them into a string
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1352">line 1352</a>
+        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1374">line 1374</a>
     </li></ul></dd>
     
 
@@ -570,7 +570,7 @@ Iterates over the bytes of the array, catenating them into a string
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1337">line 1337</a>
+        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1360">line 1360</a>
     </li></ul></dd>
     
 
@@ -798,7 +798,7 @@ Iterates over the bytes of the array, catenating them into a string
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1198">line 1198</a>
+        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1224">line 1224</a>
     </li></ul></dd>
     
 
@@ -1003,7 +1003,7 @@ Iterates over the bytes of the array, catenating them into a string
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1017">line 1017</a>
+        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1088">line 1088</a>
     </li></ul></dd>
     
 
@@ -1200,7 +1200,7 @@ Iterates over the bytes of the array, catenating them into a string
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1178">line 1178</a>
+        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1205">line 1205</a>
     </li></ul></dd>
     
 
@@ -1408,7 +1408,7 @@ Iterates over the bytes of the array, catenating them into a string
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1256">line 1256</a>
+        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1285">line 1285</a>
     </li></ul></dd>
     
 
@@ -1613,7 +1613,7 @@ Iterates over the bytes of the array, catenating them into a string
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1044">line 1044</a>
+        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1112">line 1112</a>
     </li></ul></dd>
     
 
@@ -1686,7 +1686,7 @@ Iterates over the bytes of the array, catenating them into a string
     
 
     
-    <h4 class="name" id=".deriveKey"><span class="type-signature">(async, private, static) </span>deriveKey<span class="signature">(key, password, spec)</span><span class="type-signature"> &rarr; {CryptoKey}</span></h4>
+    <h4 class="name" id=".deriveKey"><span class="type-signature">(async, private, static) </span>deriveKey<span class="signature">(key, passwordArray, spec)</span><span class="type-signature"> &rarr; {CryptoKey}</span></h4>
     
 
     
@@ -1753,13 +1753,13 @@ Iterates over the bytes of the array, catenating them into a string
 
         <tr>
             
-                <td class="name"><code>password</code></td>
+                <td class="name"><code>passwordArray</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">Uint8Array</span>
 
 
             
@@ -1769,7 +1769,7 @@ Iterates over the bytes of the array, catenating them into a string
 
             
 
-            <td class="description last"></td>
+            <td class="description last">encoded password</td>
         </tr>
 
     
@@ -1833,7 +1833,7 @@ Iterates over the bytes of the array, catenating them into a string
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1115">line 1115</a>
+        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1157">line 1157</a>
     </li></ul></dd>
     
 
@@ -1992,7 +1992,7 @@ Iterates over the bytes of the array, catenating them into a string
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1094">line 1094</a>
+        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1137">line 1137</a>
     </li></ul></dd>
     
 
@@ -2119,7 +2119,7 @@ generates 256 bit long keys (8 Bits * 32) for AES with 256 bit long blocks
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1322">line 1322</a>
+        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1346">line 1346</a>
     </li></ul></dd>
     
 
@@ -2200,9 +2200,11 @@ generates 256 bit long keys (8 Bits * 32) for AES with 256 bit long blocks
 
 
 <div class="description">
-    convert UTF-8 string into a Uint8Array
+    convert binary string into a Uint8Array
 
-Iterates over the bytes of the message, writing them to the array
+Iterates over the characters of the message, writing their codes to
+the array. Only use this for binary strings, i.e. the output of atob,
+characters above U+00FF get truncated to their lowest byte.
 </div>
 
 
@@ -2254,7 +2256,7 @@ Iterates over the bytes of the message, writing them to the array
 
             
 
-            <td class="description last">UTF-8 string</td>
+            <td class="description last">binary string</td>
         </tr>
 
     
@@ -2295,7 +2297,7 @@ Iterates over the bytes of the message, writing them to the array
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line997">line 997</a>
+        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line1067">line 1067</a>
     </li></ul></dd>
     
 
@@ -2348,330 +2350,6 @@ Iterates over the bytes of the message, writing them to the array
 
 
         
-            
-
-    
-
-    
-    <h4 class="name" id=".utf16To8"><span class="type-signature">(private, static) </span>utf16To8<span class="signature">(message)</span><span class="type-signature"> &rarr; {string}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    convert DOMString (UTF-16) to a UTF-8 string stored in a DOMString
-
-URI encodes the message, then finds the percent encoded characters
-and transforms these hexadecimal representation back into bytes
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>message</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">UTF-16 string</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line952">line 952</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    UTF-8 string
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">string</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id=".utf8To16"><span class="type-signature">(private, static) </span>utf8To16<span class="signature">(message)</span><span class="type-signature"> &rarr; {string}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    convert UTF-8 string stored in a DOMString to a standard UTF-16 DOMString
-
-Iterates over the bytes of the message, converting them all hexadecimal
-percent encoded representations, then URI decodes them all
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>message</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">UTF-8 string</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="privatebin.js.html">privatebin.js</a>, <a href="privatebin.js.html#line928">line 928</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    UTF-16 string
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">string</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
     
 
     
@@ -2687,13 +2365,13 @@ percent encoded representations, then URI decodes them all
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Legacy.html">Legacy</a></li><li><a href="PrivateBin.html">PrivateBin</a></li></ul><h3>Classes</h3><ul><li><a href="Alert.html">Alert</a></li><li><a href="AttachmentViewer.html">AttachmentViewer</a></li><li><a href="Check.html">Check</a></li><li><a href="Comment.html">Comment</a></li><li><a href="Controller.html">Controller</a></li><li><a href="CryptTool.html">CryptTool</a></li><li><a href="CryptoData.html">CryptoData</a></li><li><a href="DiscussionViewer.html">DiscussionViewer</a></li><li><a href="Editor.html">Editor</a></li><li><a href="Helper.html">Helper</a></li><li><a href="I18n.html">I18n</a></li><li><a href="Model.html">Model</a></li><li><a href="Paste.html">Paste</a></li><li><a href="PasteDecrypter.html">PasteDecrypter</a></li><li><a href="PasteEncrypter.html">PasteEncrypter</a></li><li><a href="PasteStatus.html">PasteStatus</a></li><li><a href="PasteViewer.html">PasteViewer</a></li><li><a href="Prompt.html">Prompt</a></li><li><a href="ServerInteraction.html">ServerInteraction</a></li><li><a href="TopNav.html">TopNav</a></li><li><a href="UiHelper.html">UiHelper</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Legacy.html">Legacy</a></li><li><a href="PrivateBin.html">PrivateBin</a></li></ul><h3>Classes</h3><ul><li><a href="Alert.html">Alert</a></li><li><a href="AttachmentViewer.html">AttachmentViewer</a></li><li><a href="Check.html">Check</a></li><li><a href="Comment.html">Comment</a></li><li><a href="Controller.html">Controller</a></li><li><a href="CopyToClipboard.html">CopyToClipboard</a></li><li><a href="CryptTool.html">CryptTool</a></li><li><a href="CryptoData.html">CryptoData</a></li><li><a href="DiscussionViewer.html">DiscussionViewer</a></li><li><a href="Editor.html">Editor</a></li><li><a href="Helper.html">Helper</a></li><li><a href="I18n.html">I18n</a></li><li><a href="Model.html">Model</a></li><li><a href="PasswordPeek.html">PasswordPeek</a></li><li><a href="Paste.html">Paste</a></li><li><a href="PasteDecrypter.html">PasteDecrypter</a></li><li><a href="PasteEncrypter.html">PasteEncrypter</a></li><li><a href="PasteStatus.html">PasteStatus</a></li><li><a href="PasteViewer.html">PasteViewer</a></li><li><a href="Prompt.html">Prompt</a></li><li><a href="ServerInteraction.html">ServerInteraction</a></li><li><a href="TopNav.html">TopNav</a></li><li><a href="UiHelper.html">UiHelper</a></li></ul><h3>Global</h3><ul><li><a href="global.html#draghover">draghover</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Sun Dec 03 2023 10:21:05 GMT+0000 (Coordinated Universal Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Wed Nov 04 2026 22:50:59 GMT+0000 (Coordinated Universal Time)
 </footer>
 
 <script> prettyPrint(); </script>

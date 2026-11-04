@@ -56,6 +56,21 @@ Search.appendIndex(
             "summary": "initialize\u0020PrivateBin",
             "url": "classes/PrivateBin-Controller.html#method__init"
         },                {
+            "fqsen": "\\PrivateBin\\Controller\u003A\u003A_setDefaultLanguage\u0028\u0029",
+            "name": "_setDefaultLanguage",
+            "summary": "Set\u0020default\u0020language",
+            "url": "classes/PrivateBin-Controller.html#method__setDefaultLanguage"
+        },                {
+            "fqsen": "\\PrivateBin\\Controller\u003A\u003A_setDefaultTemplate\u0028\u0029",
+            "name": "_setDefaultTemplate",
+            "summary": "Set\u0020default\u0020template",
+            "url": "classes/PrivateBin-Controller.html#method__setDefaultTemplate"
+        },                {
+            "fqsen": "\\PrivateBin\\Controller\u003A\u003A_setCacheHeaders\u0028\u0029",
+            "name": "_setCacheHeaders",
+            "summary": "Turn\u0020off\u0020browser\u0020caching",
+            "url": "classes/PrivateBin-Controller.html#method__setCacheHeaders"
+        },                {
             "fqsen": "\\PrivateBin\\Controller\u003A\u003A_create\u0028\u0029",
             "name": "_create",
             "summary": "Store\u0020new\u0020paste\u0020or\u0020comment",
@@ -63,12 +78,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PrivateBin\\Controller\u003A\u003A_delete\u0028\u0029",
             "name": "_delete",
-            "summary": "Delete\u0020an\u0020existing\u0020paste",
+            "summary": "Delete\u0020an\u0020existing\u0020document",
             "url": "classes/PrivateBin-Controller.html#method__delete"
         },                {
             "fqsen": "\\PrivateBin\\Controller\u003A\u003A_read\u0028\u0029",
             "name": "_read",
-            "summary": "Read\u0020an\u0020existing\u0020paste\u0020or\u0020comment,\u0020only\u0020allowed\u0020via\u0020a\u0020JSON\u0020API\u0020call",
+            "summary": "Read\u0020an\u0020existing\u0020document,\u0020only\u0020allowed\u0020via\u0020a\u0020JSON\u0020API\u0020call",
             "url": "classes/PrivateBin-Controller.html#method__read"
         },                {
             "fqsen": "\\PrivateBin\\Controller\u003A\u003A_view\u0028\u0029",
@@ -81,15 +96,20 @@ Search.appendIndex(
             "summary": "outputs\u0020requested\u0020JSON\u002DLD\u0020context",
             "url": "classes/PrivateBin-Controller.html#method__jsonld"
         },                {
-            "fqsen": "\\PrivateBin\\Controller\u003A\u003A_yourlsproxy\u0028\u0029",
-            "name": "_yourlsproxy",
-            "summary": "proxies\u0020link\u0020to\u0020YOURLS,\u0020updates\u0020status\u0020or\u0020error\u0020with\u0020response",
-            "url": "classes/PrivateBin-Controller.html#method__yourlsproxy"
+            "fqsen": "\\PrivateBin\\Controller\u003A\u003A_json_error\u0028\u0029",
+            "name": "_json_error",
+            "summary": "prepares\u0020JSON\u0020encoded\u0020error\u0020message",
+            "url": "classes/PrivateBin-Controller.html#method__json_error"
         },                {
-            "fqsen": "\\PrivateBin\\Controller\u003A\u003A_return_message\u0028\u0029",
-            "name": "_return_message",
-            "summary": "prepares\u0020JSON\u0020encoded\u0020status\u0020message",
-            "url": "classes/PrivateBin-Controller.html#method__return_message"
+            "fqsen": "\\PrivateBin\\Controller\u003A\u003A_json_result\u0028\u0029",
+            "name": "_json_result",
+            "summary": "prepares\u0020JSON\u0020encoded\u0020result\u0020message",
+            "url": "classes/PrivateBin-Controller.html#method__json_result"
+        },                {
+            "fqsen": "\\PrivateBin\\Controller\u003A\u003A_shortenerproxy\u0028\u0029",
+            "name": "_shortenerproxy",
+            "summary": "Proxies\u0020a\u0020link\u0020using\u0020the\u0020specified\u0020proxy\u0020class,\u0020and\u0020updates\u0020the\u0020status\u0020or\u0020error\u0020with\u0020the\u0020response.",
+            "url": "classes/PrivateBin-Controller.html#method__shortenerproxy"
         },                {
             "fqsen": "\\PrivateBin\\Controller\u003A\u003AVERSION",
             "name": "VERSION",
@@ -103,7 +123,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PrivateBin\\Controller\u003A\u003AGENERIC_ERROR",
             "name": "GENERIC_ERROR",
-            "summary": "show\u0020the\u0020same\u0020error\u0020message\u0020if\u0020the\u0020paste\u0020expired\u0020or\u0020does\u0020not\u0020exist",
+            "summary": "show\u0020the\u0020same\u0020error\u0020message\u0020if\u0020the\u0020document\u0020expired\u0020or\u0020does\u0020not\u0020exist",
             "url": "classes/PrivateBin-Controller.html#constant_GENERIC_ERROR"
         },                {
             "fqsen": "\\PrivateBin\\Controller\u003A\u003A\u0024_conf",
@@ -120,6 +140,11 @@ Search.appendIndex(
             "name": "_status",
             "summary": "status\u0020message",
             "url": "classes/PrivateBin-Controller.html#property__status"
+        },                {
+            "fqsen": "\\PrivateBin\\Controller\u003A\u003A\u0024_is_deleted",
+            "name": "_is_deleted",
+            "summary": "status\u0020message",
+            "url": "classes/PrivateBin-Controller.html#property__is_deleted"
         },                {
             "fqsen": "\\PrivateBin\\Controller\u003A\u003A\u0024_json",
             "name": "_json",
@@ -213,13 +238,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PrivateBin\\Data\\AbstractData\u003A\u003AgetOpenSlot\u0028\u0029",
             "name": "getOpenSlot",
-            "summary": "Get\u0020next\u0020free\u0020slot\u0020for\u0020comment\u0020from\u0020postdate.",
+            "summary": "Get\u0020next\u0020free\u0020slot\u0020for\u0020comment\u0020from\u0020the\u0020creation\u0020timestamp",
             "url": "classes/PrivateBin-Data-AbstractData.html#method_getOpenSlot"
         },                {
-            "fqsen": "\\PrivateBin\\Data\\AbstractData\u003A\u003AupgradePreV1Format\u0028\u0029",
-            "name": "upgradePreV1Format",
-            "summary": "Upgrade\u0020pre\u002Dversion\u00201\u0020pastes\u0020with\u0020attachment\u0020to\u0020version\u00201\u0020format.",
-            "url": "classes/PrivateBin-Data-AbstractData.html#method_upgradePreV1Format"
+            "fqsen": "\\PrivateBin\\Data\\AbstractData\u003A\u003AsortComments\u0028\u0029",
+            "name": "sortComments",
+            "summary": "Sort\u0020comments\u0020chronologically,\u0020including\u0020collision\u0020suffixes.",
+            "url": "classes/PrivateBin-Data-AbstractData.html#method_sortComments"
         },                {
             "fqsen": "\\PrivateBin\\Data\\AbstractData\u003A\u003A\u0024_last_cache",
             "name": "_last_cache",
@@ -301,11 +326,6 @@ Search.appendIndex(
             "summary": "run\u0020a\u0020select\u0020statement",
             "url": "classes/PrivateBin-Data-Database.html#method__select"
         },                {
-            "fqsen": "\\PrivateBin\\Data\\Database\u003A\u003A_getVersionedKeys\u0028\u0029",
-            "name": "_getVersionedKeys",
-            "summary": "get\u0020version\u0020dependent\u0020key\u0020names",
-            "url": "classes/PrivateBin-Data-Database.html#method__getVersionedKeys"
-        },                {
             "fqsen": "\\PrivateBin\\Data\\Database\u003A\u003A_getTableQuery\u0028\u0029",
             "name": "_getTableQuery",
             "summary": "get\u0020table\u0020list\u0020query,\u0020depending\u0020on\u0020the\u0020database\u0020type",
@@ -343,12 +363,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PrivateBin\\Data\\Database\u003A\u003A_createCommentTable\u0028\u0029",
             "name": "_createCommentTable",
-            "summary": "create\u0020the\u0020paste\u0020table",
+            "summary": "create\u0020the\u0020comment\u0020table",
             "url": "classes/PrivateBin-Data-Database.html#method__createCommentTable"
         },                {
             "fqsen": "\\PrivateBin\\Data\\Database\u003A\u003A_createConfigTable\u0028\u0029",
             "name": "_createConfigTable",
-            "summary": "create\u0020the\u0020paste\u0020table",
+            "summary": "create\u0020the\u0020config\u0020table",
             "url": "classes/PrivateBin-Data-Database.html#method__createConfigTable"
         },                {
             "fqsen": "\\PrivateBin\\Data\\Database\u003A\u003A_sanitizeClob\u0028\u0029",
@@ -360,6 +380,11 @@ Search.appendIndex(
             "name": "_sanitizeIdentifier",
             "summary": "sanitizes\u0020identifiers",
             "url": "classes/PrivateBin-Data-Database.html#method__sanitizeIdentifier"
+        },                {
+            "fqsen": "\\PrivateBin\\Data\\Database\u003A\u003A_supportsDropColumn\u0028\u0029",
+            "name": "_supportsDropColumn",
+            "summary": "check\u0020if\u0020the\u0020current\u0020database\u0020type\u0020supports\u0020dropping\u0020columns",
+            "url": "classes/PrivateBin-Data-Database.html#method__supportsDropColumn"
         },                {
             "fqsen": "\\PrivateBin\\Data\\Database\u003A\u003A_upgradeDatabase\u0028\u0029",
             "name": "_upgradeDatabase",
@@ -476,6 +501,16 @@ Search.appendIndex(
             "summary": "rename\u0020a\u0020file,\u0020prepending\u0020the\u0020protection\u0020line\u0020at\u0020the\u0020beginning",
             "url": "classes/PrivateBin-Data-Filesystem.html#method__prependRename"
         },                {
+            "fqsen": "\\PrivateBin\\Data\\Filesystem\u003A\u003AHTACCESS_LINE",
+            "name": "HTACCESS_LINE",
+            "summary": "line\u0020in\u0020generated\u0020.htaccess\u0020files,\u0020to\u0020protect\u0020exposed\u0020directories\u0020from\u0020being\u0020browsable\u0020on\u0020apache\u0020web\u0020servers",
+            "url": "classes/PrivateBin-Data-Filesystem.html#constant_HTACCESS_LINE"
+        },                {
+            "fqsen": "\\PrivateBin\\Data\\Filesystem\u003A\u003AID_PATTERN",
+            "name": "ID_PATTERN",
+            "summary": "ID\u0020glob\u0028\u0029\u0020pattern\u0020of\u0020valid\u0020document\u0020IDs\u0020as\u0020well\u0020as\u0020parent\u0020and\u0020comment\u0020IDs\n16\u0020lower\u0020case\u0020characters\u0020for\u00208\u0020bytes\u0020in\u0020hexadecimal\u0020encoding",
+            "url": "classes/PrivateBin-Data-Filesystem.html#constant_ID_PATTERN"
+        },                {
             "fqsen": "\\PrivateBin\\Data\\Filesystem\u003A\u003APASTE_FILE_PATTERN",
             "name": "PASTE_FILE_PATTERN",
             "summary": "glob\u0028\u0029\u0020pattern\u0020of\u0020the\u0020two\u0020folder\u0020levels\u0020and\u0020the\u0020paste\u0020files\u0020under\u0020the\nconfigured\u0020path.\u0020Needs\u0020to\u0020return\u0020both\u0020files\u0020with\u0020and\u0020without\u0020.php\u0020suffix,\nso\u0020they\u0020can\u0020be\u0020hardened\u0020by\u0020_prependRename\u0028\u0029,\u0020which\u0020is\u0020hooked\u0020into\u0020exists\u0028\u0029.",
@@ -485,11 +520,6 @@ Search.appendIndex(
             "name": "PROTECTION_LINE",
             "summary": "first\u0020line\u0020in\u0020paste\u0020or\u0020comment\u0020files,\u0020to\u0020protect\u0020their\u0020contents\u0020from\u0020browsing\u0020exposed\u0020data\u0020directories",
             "url": "classes/PrivateBin-Data-Filesystem.html#constant_PROTECTION_LINE"
-        },                {
-            "fqsen": "\\PrivateBin\\Data\\Filesystem\u003A\u003AHTACCESS_LINE",
-            "name": "HTACCESS_LINE",
-            "summary": "line\u0020in\u0020generated\u0020.htaccess\u0020files,\u0020to\u0020protect\u0020exposed\u0020directories\u0020from\u0020being\u0020browsable\u0020on\u0020apache\u0020web\u0020servers",
-            "url": "classes/PrivateBin-Data-Filesystem.html#constant_HTACCESS_LINE"
         },                {
             "fqsen": "\\PrivateBin\\Data\\Filesystem\u003A\u003A\u0024_path",
             "name": "_path",
@@ -701,6 +731,16 @@ Search.appendIndex(
             "summary": "S3\u0020prefix\u0020for\u0020all\u0020PrivateBin\u0020data\u0020in\u0020this\u0020bucket",
             "url": "classes/PrivateBin-Data-S3Storage.html#property__prefix"
         },                {
+            "fqsen": "\\PrivateBin\\Exception\\TranslatedException",
+            "name": "TranslatedException",
+            "summary": "TranslatedException",
+            "url": "classes/PrivateBin-Exception-TranslatedException.html"
+        },                {
+            "fqsen": "\\PrivateBin\\Exception\\TranslatedException\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Translating\u0020exception\u0020constructor\u0020with\u0020mandatory\u0020messageId.",
+            "url": "classes/PrivateBin-Exception-TranslatedException.html#method___construct"
+        },                {
             "fqsen": "\\PrivateBin\\Filter",
             "name": "Filter",
             "summary": "Filter",
@@ -751,6 +791,11 @@ Search.appendIndex(
             "summary": "loads\u0020translations",
             "url": "classes/PrivateBin-I18n.html#method_loadTranslations"
         },                {
+            "fqsen": "\\PrivateBin\\I18n\u003A\u003A_getLanguageFromHttpHeader\u0028\u0029",
+            "name": "_getLanguageFromHttpHeader",
+            "summary": "get\u0020languages\u0020bsed\u0020on\u0020the\u0020HTTP\u0020header",
+            "url": "classes/PrivateBin-I18n.html#method__getLanguageFromHttpHeader"
+        },                {
             "fqsen": "\\PrivateBin\\I18n\u003A\u003AgetAvailableLanguages\u0028\u0029",
             "name": "getAvailableLanguages",
             "summary": "get\u0020list\u0020of\u0020available\u0020translations\u0020based\u0020on\u0020files\u0020found",
@@ -760,6 +805,11 @@ Search.appendIndex(
             "name": "getBrowserLanguages",
             "summary": "detect\u0020the\u0020clients\u0020supported\u0020languages\u0020and\u0020return\u0020them\u0020ordered\u0020by\u0020preference",
             "url": "classes/PrivateBin-I18n.html#method_getBrowserLanguages"
+        },                {
+            "fqsen": "\\PrivateBin\\I18n\u003A\u003A_normalizeBrowserLanguages\u0028\u0029",
+            "name": "_normalizeBrowserLanguages",
+            "summary": "normalize\u0020browser\u0020language\u0020aliases\u0020to\u0020available\u0020locale\u0020IDs",
+            "url": "classes/PrivateBin-I18n.html#method__normalizeBrowserLanguages"
         },                {
             "fqsen": "\\PrivateBin\\I18n\u003A\u003AgetLanguage\u0028\u0029",
             "name": "getLanguage",
@@ -775,6 +825,11 @@ Search.appendIndex(
             "name": "isRtl",
             "summary": "determines\u0020if\u0020the\u0020current\u0020language\u0020is\u0020written\u0020right\u002Dto\u002Dleft\u0020\u0028RTL\u0029",
             "url": "classes/PrivateBin-I18n.html#method_isRtl"
+        },                {
+            "fqsen": "\\PrivateBin\\I18n\u003A\u003AgetCopyHotkey\u0028\u0029",
+            "name": "getCopyHotkey",
+            "summary": "get\u0020OS\u002Dspecific\u0020copy\u0020hotkey\u0020modifier\u0020key\u0020name\u0020based\u0020on\u0020user\u0020agent",
+            "url": "classes/PrivateBin-I18n.html#method_getCopyHotkey"
         },                {
             "fqsen": "\\PrivateBin\\I18n\u003A\u003AsetLanguageFallback\u0028\u0029",
             "name": "setLanguageFallback",
@@ -846,11 +901,6 @@ Search.appendIndex(
             "summary": "Returns\u0020an\u0020array\u0020with\u0020the\u0020contents\u0020as\u0020described\u0020in\u0020the\u0020given\u0020JSON\u0020input",
             "url": "classes/PrivateBin-Json.html#method_decode"
         },                {
-            "fqsen": "\\PrivateBin\\Json\u003A\u003A_detectError\u0028\u0029",
-            "name": "_detectError",
-            "summary": "Detects\u0020JSON\u0020errors\u0020and\u0020raises\u0020an\u0020exception\u0020if\u0020one\u0020is\u0020found",
-            "url": "classes/PrivateBin-Json.html#method__detectError"
-        },                {
             "fqsen": "\\PrivateBin\\Model\\AbstractModel",
             "name": "AbstractModel",
             "summary": "AbstractModel",
@@ -886,11 +936,6 @@ Search.appendIndex(
             "summary": "Store\u0020the\u0020instance\u0027s\u0020data.",
             "url": "classes/PrivateBin-Model-AbstractModel.html#method_store"
         },                {
-            "fqsen": "\\PrivateBin\\Model\\AbstractModel\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "Delete\u0020the\u0020current\u0020instance.",
-            "url": "classes/PrivateBin-Model-AbstractModel.html#method_delete"
-        },                {
             "fqsen": "\\PrivateBin\\Model\\AbstractModel\u003A\u003Aexists\u0028\u0029",
             "name": "exists",
             "summary": "Test\u0020if\u0020current\u0020instance\u0020exists\u0020in\u0020store.",
@@ -910,6 +955,16 @@ Search.appendIndex(
             "name": "_validate",
             "summary": "Validate\u0020data.",
             "url": "classes/PrivateBin-Model-AbstractModel.html#method__validate"
+        },                {
+            "fqsen": "\\PrivateBin\\Model\\AbstractModel\u003A\u003AINVALID_DATA_ERROR",
+            "name": "INVALID_DATA_ERROR",
+            "summary": "show\u0020the\u0020same\u0020error\u0020message\u0020if\u0020the\u0020data\u0020is\u0020invalid",
+            "url": "classes/PrivateBin-Model-AbstractModel.html#constant_INVALID_DATA_ERROR"
+        },                {
+            "fqsen": "\\PrivateBin\\Model\\AbstractModel\u003A\u003ACOLLISION_ERROR",
+            "name": "COLLISION_ERROR",
+            "summary": "show\u0020the\u0020same\u0020error\u0020message\u0020if\u0020the\u0020document\u0020ID\u0020already\u0020exists",
+            "url": "classes/PrivateBin-Model-AbstractModel.html#constant_COLLISION_ERROR"
         },                {
             "fqsen": "\\PrivateBin\\Model\\AbstractModel\u003A\u003A\u0024_id",
             "name": "_id",
@@ -941,11 +996,6 @@ Search.appendIndex(
             "summary": "Store\u0020the\u0020comment\u0027s\u0020data.",
             "url": "classes/PrivateBin-Model-Comment.html#method_store"
         },                {
-            "fqsen": "\\PrivateBin\\Model\\Comment\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "Delete\u0020the\u0020comment.",
-            "url": "classes/PrivateBin-Model-Comment.html#method_delete"
-        },                {
             "fqsen": "\\PrivateBin\\Model\\Comment\u003A\u003Aexists\u0028\u0029",
             "name": "exists",
             "summary": "Test\u0020if\u0020comment\u0020exists\u0020in\u0020store.",
@@ -970,6 +1020,11 @@ Search.appendIndex(
             "name": "getParentId",
             "summary": "Get\u0020parent\u0020ID.",
             "url": "classes/PrivateBin-Model-Comment.html#method_getParentId"
+        },                {
+            "fqsen": "\\PrivateBin\\Model\\Comment\u003A\u003A_validate\u0028\u0029",
+            "name": "_validate",
+            "summary": "Validate\u0020data.",
+            "url": "classes/PrivateBin-Model-Comment.html#method__validate"
         },                {
             "fqsen": "\\PrivateBin\\Model\\Comment\u003A\u003A_sanitize\u0028\u0029",
             "name": "_sanitize",
@@ -1035,6 +1090,21 @@ Search.appendIndex(
             "name": "_validate",
             "summary": "Validate\u0020data.",
             "url": "classes/PrivateBin-Model-Paste.html#method__validate"
+        },                {
+            "fqsen": "\\PrivateBin\\Model\\Paste\u003A\u003AADATA_FORMATTER",
+            "name": "ADATA_FORMATTER",
+            "summary": "authenticated\u0020data\u0020index\u0020of\u0020paste\u0020formatter\u0020\u0028plaintext\/syntaxhighlighting\/markdown\u0029",
+            "url": "classes/PrivateBin-Model-Paste.html#constant_ADATA_FORMATTER"
+        },                {
+            "fqsen": "\\PrivateBin\\Model\\Paste\u003A\u003AADATA_OPEN_DISCUSSION",
+            "name": "ADATA_OPEN_DISCUSSION",
+            "summary": "authenticated\u0020data\u0020index\u0020of\u0020open\u002Ddiscussion\u0020flag\u0020\u00280\/1\u0029",
+            "url": "classes/PrivateBin-Model-Paste.html#constant_ADATA_OPEN_DISCUSSION"
+        },                {
+            "fqsen": "\\PrivateBin\\Model\\Paste\u003A\u003AADATA_BURN_AFTER_READING",
+            "name": "ADATA_BURN_AFTER_READING",
+            "summary": "authenticated\u0020data\u0020index\u0020of\u0020burn\u002Dafter\u002Dreading\u0020flag\u0020\u00280\/1\u0029",
+            "url": "classes/PrivateBin-Model-Paste.html#constant_ADATA_BURN_AFTER_READING"
         },                {
             "fqsen": "\\PrivateBin\\Model",
             "name": "Model",
@@ -1196,6 +1266,126 @@ Search.appendIndex(
             "summary": "time\u0020limit\u0020in\u0020seconds,\u0020defaults\u0020to\u002010s",
             "url": "classes/PrivateBin-Persistence-TrafficLimiter.html#property__limit"
         },                {
+            "fqsen": "\\PrivateBin\\Proxy\\AbstractProxy",
+            "name": "AbstractProxy",
+            "summary": "AbstractProxy",
+            "url": "classes/PrivateBin-Proxy-AbstractProxy.html"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\AbstractProxy\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "constructor",
+            "url": "classes/PrivateBin-Proxy-AbstractProxy.html#method___construct"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\AbstractProxy\u003A\u003AlogErrorWithClassName\u0028\u0029",
+            "name": "logErrorWithClassName",
+            "summary": "",
+            "url": "classes/PrivateBin-Proxy-AbstractProxy.html#method_logErrorWithClassName"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\AbstractProxy\u003A\u003AgetError\u0028\u0029",
+            "name": "getError",
+            "summary": "Returns\u0020the\u0020\u0028untranslated\u0029\u0020error\u0020message",
+            "url": "classes/PrivateBin-Proxy-AbstractProxy.html#method_getError"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\AbstractProxy\u003A\u003AgetUrl\u0028\u0029",
+            "name": "getUrl",
+            "summary": "Returns\u0020the\u0020shortened\u0020URL",
+            "url": "classes/PrivateBin-Proxy-AbstractProxy.html#method_getUrl"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\AbstractProxy\u003A\u003AisError\u0028\u0029",
+            "name": "isError",
+            "summary": "Returns\u0020true\u0020if\u0020any\u0020error\u0020has\u0020occurred",
+            "url": "classes/PrivateBin-Proxy-AbstractProxy.html#method_isError"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\AbstractProxy\u003A\u003A_getProxyPayload\u0028\u0029",
+            "name": "_getProxyPayload",
+            "summary": "Abstract\u0020method\u0020to\u0020get\u0020the\u0020payload\u0020to\u0020send\u0020to\u0020the\u0020URL\u0020shortener",
+            "url": "classes/PrivateBin-Proxy-AbstractProxy.html#method__getProxyPayload"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\AbstractProxy\u003A\u003A_extractShortUrl\u0028\u0029",
+            "name": "_extractShortUrl",
+            "summary": "Abstract\u0020method\u0020to\u0020extract\u0020the\u0020shortUrl\u0020from\u0020the\u0020response",
+            "url": "classes/PrivateBin-Proxy-AbstractProxy.html#method__extractShortUrl"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\AbstractProxy\u003A\u003A_getProxyUrl\u0028\u0029",
+            "name": "_getProxyUrl",
+            "summary": "Abstract\u0020method\u0020to\u0020get\u0020the\u0020proxy\u0020URL",
+            "url": "classes/PrivateBin-Proxy-AbstractProxy.html#method__getProxyUrl"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\AbstractProxy\u003A\u003A\u0024_error",
+            "name": "_error",
+            "summary": "error\u0020message",
+            "url": "classes/PrivateBin-Proxy-AbstractProxy.html#property__error"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\AbstractProxy\u003A\u003A\u0024_proxyUrl",
+            "name": "_proxyUrl",
+            "summary": "proxy\u0020URL",
+            "url": "classes/PrivateBin-Proxy-AbstractProxy.html#property__proxyUrl"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\AbstractProxy\u003A\u003A\u0024_url",
+            "name": "_url",
+            "summary": "shortened\u0020URL",
+            "url": "classes/PrivateBin-Proxy-AbstractProxy.html#property__url"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\ChhotoProxy",
+            "name": "ChhotoProxy",
+            "summary": "ChhotoProxy",
+            "url": "classes/PrivateBin-Proxy-ChhotoProxy.html"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\ChhotoProxy\u003A\u003A_getProxyUrl\u0028\u0029",
+            "name": "_getProxyUrl",
+            "summary": "Overrides\u0020the\u0020abstract\u0020parent\u0020function\u0020to\u0020get\u0020the\u0020proxy\u0020URL.",
+            "url": "classes/PrivateBin-Proxy-ChhotoProxy.html#method__getProxyUrl"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\ChhotoProxy\u003A\u003A_getProxyPayload\u0028\u0029",
+            "name": "_getProxyPayload",
+            "summary": "Overrides\u0020the\u0020abstract\u0020parent\u0020function\u0020to\u0020get\u0020contents\u0020from\u0020Chhoto\u0020API.",
+            "url": "classes/PrivateBin-Proxy-ChhotoProxy.html#method__getProxyPayload"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\ChhotoProxy\u003A\u003A_extractShortUrl\u0028\u0029",
+            "name": "_extractShortUrl",
+            "summary": "Extracts\u0020the\u0020short\u0020URL\u0020from\u0020the\u0020Chhoto\u0020API\u0020response.",
+            "url": "classes/PrivateBin-Proxy-ChhotoProxy.html#method__extractShortUrl"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\ShlinkProxy",
+            "name": "ShlinkProxy",
+            "summary": "ShlinkProxy",
+            "url": "classes/PrivateBin-Proxy-ShlinkProxy.html"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\ShlinkProxy\u003A\u003A_getProxyUrl\u0028\u0029",
+            "name": "_getProxyUrl",
+            "summary": "Overrides\u0020the\u0020abstract\u0020parent\u0020function\u0020to\u0020get\u0020the\u0020proxy\u0020URL.",
+            "url": "classes/PrivateBin-Proxy-ShlinkProxy.html#method__getProxyUrl"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\ShlinkProxy\u003A\u003A_getProxyPayload\u0028\u0029",
+            "name": "_getProxyPayload",
+            "summary": "Overrides\u0020the\u0020abstract\u0020parent\u0020function\u0020to\u0020get\u0020contents\u0020from\u0020Shlink\u0020API.",
+            "url": "classes/PrivateBin-Proxy-ShlinkProxy.html#method__getProxyPayload"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\ShlinkProxy\u003A\u003A_extractShortUrl\u0028\u0029",
+            "name": "_extractShortUrl",
+            "summary": "Extracts\u0020the\u0020short\u0020URL\u0020from\u0020the\u0020shlink\u0020API\u0020response.",
+            "url": "classes/PrivateBin-Proxy-ShlinkProxy.html#method__extractShortUrl"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\YourlsProxy",
+            "name": "YourlsProxy",
+            "summary": "YourlsProxy",
+            "url": "classes/PrivateBin-Proxy-YourlsProxy.html"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\YourlsProxy\u003A\u003A_getProxyUrl\u0028\u0029",
+            "name": "_getProxyUrl",
+            "summary": "Overrides\u0020the\u0020abstract\u0020parent\u0020function\u0020to\u0020get\u0020the\u0020proxy\u0020URL.",
+            "url": "classes/PrivateBin-Proxy-YourlsProxy.html#method__getProxyUrl"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\YourlsProxy\u003A\u003A_getProxyPayload\u0028\u0029",
+            "name": "_getProxyPayload",
+            "summary": "Overrides\u0020the\u0020abstract\u0020parent\u0020function\u0020to\u0020get\u0020contents\u0020from\u0020YOURLS\u0020API.",
+            "url": "classes/PrivateBin-Proxy-YourlsProxy.html#method__getProxyPayload"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy\\YourlsProxy\u003A\u003A_extractShortUrl\u0028\u0029",
+            "name": "_extractShortUrl",
+            "summary": "Extracts\u0020the\u0020short\u0020URL\u0020from\u0020the\u0020YOURLS\u0020API\u0020response.",
+            "url": "classes/PrivateBin-Proxy-YourlsProxy.html#method__extractShortUrl"
+        },                {
             "fqsen": "\\PrivateBin\\Request",
             "name": "Request",
             "summary": "Request",
@@ -1203,7 +1393,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PrivateBin\\Request\u003A\u003AgetPasteId\u0028\u0029",
             "name": "getPasteId",
-            "summary": "Return\u0020the\u0020paste\u0020ID\u0020of\u0020the\u0020current\u0020paste.",
+            "summary": "Return\u0020the\u0020paste\u0020ID\u0020of\u0020the\u0020current\u0020document.",
             "url": "classes/PrivateBin-Request.html#method_getPasteId"
         },                {
             "fqsen": "\\PrivateBin\\Request\u003A\u003A__construct\u0028\u0029",
@@ -1233,7 +1423,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\PrivateBin\\Request\u003A\u003AgetRequestUri\u0028\u0029",
             "name": "getRequestUri",
-            "summary": "Get\u0020request\u0020URI",
+            "summary": "Get\u0020request\u0020URI\u0020path\u0020without\u0020GET\u0020parameters",
             "url": "classes/PrivateBin-Request.html#method_getRequestUri"
         },                {
             "fqsen": "\\PrivateBin\\Request\u003A\u003AisJsonApiCall\u0028\u0029",
@@ -1266,6 +1456,11 @@ Search.appendIndex(
             "summary": "MIME\u0020type\u0020for\u0020XHTML",
             "url": "classes/PrivateBin-Request.html#constant_MIME_XHTML"
         },                {
+            "fqsen": "\\PrivateBin\\Request\u003A\u003A\u0024_bodyLength",
+            "name": "_bodyLength",
+            "summary": "Input\u0020stream\u0020length\u0020for\u0020size\u0020checks",
+            "url": "classes/PrivateBin-Request.html#property__bodyLength"
+        },                {
             "fqsen": "\\PrivateBin\\Request\u003A\u003A\u0024_inputStream",
             "name": "_inputStream",
             "summary": "Input\u0020stream\u0020to\u0020use\u0020for\u0020PUT\u0020parameter\u0020parsing",
@@ -1286,6 +1481,46 @@ Search.appendIndex(
             "summary": "If\u0020we\u0020are\u0020in\u0020a\u0020JSON\u0020API\u0020context",
             "url": "classes/PrivateBin-Request.html#property__isJsonApi"
         },                {
+            "fqsen": "\\PrivateBin\\TemplateSwitcher",
+            "name": "TemplateSwitcher",
+            "summary": "TemplateSwitcher",
+            "url": "classes/PrivateBin-TemplateSwitcher.html"
+        },                {
+            "fqsen": "\\PrivateBin\\TemplateSwitcher\u003A\u003AsetAvailableTemplates\u0028\u0029",
+            "name": "setAvailableTemplates",
+            "summary": "set\u0020available\u0020templates",
+            "url": "classes/PrivateBin-TemplateSwitcher.html#method_setAvailableTemplates"
+        },                {
+            "fqsen": "\\PrivateBin\\TemplateSwitcher\u003A\u003AsetTemplateFallback\u0028\u0029",
+            "name": "setTemplateFallback",
+            "summary": "set\u0020the\u0020default\u0020template",
+            "url": "classes/PrivateBin-TemplateSwitcher.html#method_setTemplateFallback"
+        },                {
+            "fqsen": "\\PrivateBin\\TemplateSwitcher\u003A\u003AgetTemplate\u0028\u0029",
+            "name": "getTemplate",
+            "summary": "get\u0020user\u0020selected\u0020template\u0020or\u0020fallback",
+            "url": "classes/PrivateBin-TemplateSwitcher.html#method_getTemplate"
+        },                {
+            "fqsen": "\\PrivateBin\\TemplateSwitcher\u003A\u003AgetAvailableTemplates\u0028\u0029",
+            "name": "getAvailableTemplates",
+            "summary": "get\u0020list\u0020of\u0020available\u0020templates",
+            "url": "classes/PrivateBin-TemplateSwitcher.html#method_getAvailableTemplates"
+        },                {
+            "fqsen": "\\PrivateBin\\TemplateSwitcher\u003A\u003AisTemplateAvailable\u0028\u0029",
+            "name": "isTemplateAvailable",
+            "summary": "check\u0020if\u0020the\u0020provided\u0020template\u0020is\u0020available",
+            "url": "classes/PrivateBin-TemplateSwitcher.html#method_isTemplateAvailable"
+        },                {
+            "fqsen": "\\PrivateBin\\TemplateSwitcher\u003A\u003A\u0024_templateFallback",
+            "name": "_templateFallback",
+            "summary": "template\u0020fallback",
+            "url": "classes/PrivateBin-TemplateSwitcher.html#property__templateFallback"
+        },                {
+            "fqsen": "\\PrivateBin\\TemplateSwitcher\u003A\u003A\u0024_availableTemplates",
+            "name": "_availableTemplates",
+            "summary": "available\u0020templates",
+            "url": "classes/PrivateBin-TemplateSwitcher.html#property__availableTemplates"
+        },                {
             "fqsen": "\\PrivateBin\\View",
             "name": "View",
             "summary": "View",
@@ -1300,6 +1535,26 @@ Search.appendIndex(
             "name": "draw",
             "summary": "render\u0020a\u0020template",
             "url": "classes/PrivateBin-View.html#method_draw"
+        },                {
+            "fqsen": "\\PrivateBin\\View\u003A\u003A_getCacheBuster\u0028\u0029",
+            "name": "_getCacheBuster",
+            "summary": "get\u0020cache\u0020buster\u0020query\u0020string",
+            "url": "classes/PrivateBin-View.html#method__getCacheBuster"
+        },                {
+            "fqsen": "\\PrivateBin\\View\u003A\u003A_getSri\u0028\u0029",
+            "name": "_getSri",
+            "summary": "get\u0020SRI\u0020hash\u0020for\u0020given\u0020file",
+            "url": "classes/PrivateBin-View.html#method__getSri"
+        },                {
+            "fqsen": "\\PrivateBin\\View\u003A\u003A_linkTag\u0028\u0029",
+            "name": "_linkTag",
+            "summary": "echo\u0020module\u0020preload\u0020link\u0020tag\u0020incl.\u0020SRI\u0020hash\u0020for\u0020given\u0020script\u0020file",
+            "url": "classes/PrivateBin-View.html#method__linkTag"
+        },                {
+            "fqsen": "\\PrivateBin\\View\u003A\u003A_scriptTag\u0028\u0029",
+            "name": "_scriptTag",
+            "summary": "echo\u0020script\u0020tag\u0020incl.\u0020SRI\u0020hash\u0020for\u0020given\u0020script\u0020file",
+            "url": "classes/PrivateBin-View.html#method__scriptTag"
         },                {
             "fqsen": "\\PrivateBin\\View\u003A\u003A\u0024_variables",
             "name": "_variables",
@@ -1366,41 +1621,6 @@ Search.appendIndex(
             "summary": "image\u0020height",
             "url": "classes/PrivateBin-Vizhash16x16.html#property_height"
         },                {
-            "fqsen": "\\PrivateBin\\YourlsProxy",
-            "name": "YourlsProxy",
-            "summary": "YourlsProxy",
-            "url": "classes/PrivateBin-YourlsProxy.html"
-        },                {
-            "fqsen": "\\PrivateBin\\YourlsProxy\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "constructor",
-            "url": "classes/PrivateBin-YourlsProxy.html#method___construct"
-        },                {
-            "fqsen": "\\PrivateBin\\YourlsProxy\u003A\u003AgetError\u0028\u0029",
-            "name": "getError",
-            "summary": "Returns\u0020the\u0020\u0028untranslated\u0029\u0020error\u0020message",
-            "url": "classes/PrivateBin-YourlsProxy.html#method_getError"
-        },                {
-            "fqsen": "\\PrivateBin\\YourlsProxy\u003A\u003AgetUrl\u0028\u0029",
-            "name": "getUrl",
-            "summary": "Returns\u0020the\u0020shortened\u0020URL",
-            "url": "classes/PrivateBin-YourlsProxy.html#method_getUrl"
-        },                {
-            "fqsen": "\\PrivateBin\\YourlsProxy\u003A\u003AisError\u0028\u0029",
-            "name": "isError",
-            "summary": "Returns\u0020true\u0020if\u0020any\u0020error\u0020has\u0020occurred",
-            "url": "classes/PrivateBin-YourlsProxy.html#method_isError"
-        },                {
-            "fqsen": "\\PrivateBin\\YourlsProxy\u003A\u003A\u0024_error",
-            "name": "_error",
-            "summary": "error\u0020message",
-            "url": "classes/PrivateBin-YourlsProxy.html#property__error"
-        },                {
-            "fqsen": "\\PrivateBin\\YourlsProxy\u003A\u003A\u0024_url",
-            "name": "_url",
-            "summary": "shortened\u0020URL",
-            "url": "classes/PrivateBin-YourlsProxy.html#property__url"
-        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -1416,6 +1636,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/privatebin-data.html"
         },                {
+            "fqsen": "\\PrivateBin\\Exception",
+            "name": "Exception",
+            "summary": "",
+            "url": "namespaces/privatebin-exception.html"
+        },                {
             "fqsen": "\\PrivateBin\\Model",
             "name": "Model",
             "summary": "",
@@ -1425,5 +1650,10 @@ Search.appendIndex(
             "name": "Persistence",
             "summary": "",
             "url": "namespaces/privatebin-persistence.html"
+        },                {
+            "fqsen": "\\PrivateBin\\Proxy",
+            "name": "Proxy",
+            "summary": "",
+            "url": "namespaces/privatebin-proxy.html"
         }            ]
 );

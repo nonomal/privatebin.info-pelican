@@ -11,7 +11,7 @@ SITEURL = ''
 PATH = 'content'
 STATIC_PATHS = ['codedoc','coverage','img','jscoverage','jsdoc','key','.well-known']
 ARTICLE_EXCLUDES = ['codedoc','coverage','jscoverage','jsdoc']
-THEME = 'themes/privatebin-bootstrap'
+THEME = 'themes/privatebin-bootstrap5'
 
 TIMEZONE = 'Europe/Zurich'
 LOCALE = ('en_US.utf8')
@@ -37,8 +37,8 @@ MENUITEMS = (('FAQ', 'https://github.com/PrivateBin/PrivateBin/wiki/FAQ'),
 LINKS = (('Installation guide', 'https://github.com/PrivateBin/PrivateBin/blob/master/doc/Installation.md'),
          ('Configuration guide', 'https://github.com/PrivateBin/PrivateBin/wiki/Configuration'),
          ('Template guide', 'https://github.com/PrivateBin/PrivateBin/wiki/Templates'),
-         ('Upgrading from ZeroBin 0.19 Alpha', 'https://github.com/PrivateBin/PrivateBin/wiki/Upgrading-from-ZeroBin-0.19-Alpha'),
          ('Developer guide', 'https://github.com/PrivateBin/PrivateBin/wiki/Development'),
+         ('Third-party clients', 'https://github.com/PrivateBin/PrivateBin/wiki/Third-party-clients'),
          ('PHP Code Documentation', '/codedoc/'),
          ('PHP Unit Test Coverage', '/coverage/'),
          ('JS Code Documentation', '/jsdoc/'),

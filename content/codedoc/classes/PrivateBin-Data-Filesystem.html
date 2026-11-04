@@ -65,11 +65,19 @@
                 
             </li>
                     <li>
+                <a href="namespaces/privatebin-exception.html" class="">Exception</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/privatebin-model.html" class="">Model</a>
                 
             </li>
                     <li>
                 <a href="namespaces/privatebin-persistence.html" class="">Persistence</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/privatebin-proxy.html" class="">Proxy</a>
                 
             </li>
             </ul>
@@ -129,7 +137,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -168,9 +176,17 @@
 <dd>line in generated .htaccess files, to protect exposed directories from being browsable on apache web servers</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/PrivateBin-Data-Filesystem.html#constant_ID_PATTERN">ID_PATTERN</a>
+    <span>
+        &nbsp;= &#039;[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]&#039; . &#039;[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]&#039;                            </span>
+</dt>
+<dd>ID glob() pattern of valid document IDs as well as parent and comment IDs
+16 lower case characters for 8 bytes in hexadecimal encoding</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/PrivateBin-Data-Filesystem.html#constant_PASTE_FILE_PATTERN">PASTE_FILE_PATTERN</a>
     <span>
-        &nbsp;= DIRECTORY_SEPARATOR . &#039;[a-f0-9][a-f0-9]&#039; . DIRECTORY_SEPARATOR . &#039;[a-f0-9][a-f0-9]&#039; . DIRECTORY_SEPARATOR . &#039;[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]&#039; . &#039;[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]*&#039;                            </span>
+        &nbsp;= DIRECTORY_SEPARATOR . &#039;[a-f0-9][a-f0-9]&#039; . DIRECTORY_SEPARATOR . &#039;[a-f0-9][a-f0-9]&#039; . DIRECTORY_SEPARATOR . self::ID_PATTERN . &#039;*&#039;                            </span>
 </dt>
 <dd>glob() pattern of the two folder levels and the paste files under the
 configured path. Needs to return both files with and without .php suffix,
@@ -317,14 +333,14 @@ so they can be hardened by _prependRename(), which is hooked into exists().</dd>
     <span>
                                 &nbsp;: int|string    </span>
 </dt>
-<dd>Get next free slot for comment from postdate.</dd>
+<dd>Get next free slot for comment from the creation timestamp</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/PrivateBin-Data-AbstractData.html#method_upgradePreV1Format">upgradePreV1Format()</a>
+    <a href="classes/PrivateBin-Data-AbstractData.html#method_sortComments">sortComments()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Upgrade pre-version 1 pastes with attachment to version 1 format.</dd>
+<dd>Sort comments chronologically, including collision suffixes.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/PrivateBin-Data-Filesystem.html#method__dataid2discussionpath">_dataid2discussionpath()</a>
@@ -390,7 +406,7 @@ so they can be hardened by _prependRename(), which is hooked into exists().</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -426,6 +442,52 @@ so they can be hardened by _prependRename(), which is hooked into exists().</dd>
 
 </article>
                     <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ID_PATTERN">
+        ID_PATTERN
+        <a href="classes/PrivateBin-Data-Filesystem.html#constant_ID_PATTERN" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">39</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">ID glob() pattern of valid document IDs as well as parent and comment IDs
+16 lower case characters for 8 bytes in hexadecimal encoding</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">ID_PATTERN</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]&#039; . &#039;[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]&#039;</span>
+</code>
+
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/PrivateBin-Data-Filesystem.html#constant_ID_PATTERN#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">const</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>string</p>
+</section>
+
+                                    </dd>
+                                            </dl>
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_PASTE_FILE_PATTERN">
         PASTE_FILE_PATTERN
         <a href="classes/PrivateBin-Data-Filesystem.html#constant_PASTE_FILE_PATTERN" class="headerlink"><i class="fas fa-link"></i></a>
@@ -435,7 +497,7 @@ so they can be hardened by _prependRename(), which is hooked into exists().</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -447,7 +509,7 @@ so they can be hardened by _prependRename(), which is hooked into exists().</p>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">PASTE_FILE_PATTERN</span>
-    = <span class="phpdocumentor-signature__default-value">DIRECTORY_SEPARATOR . &#039;[a-f0-9][a-f0-9]&#039; . DIRECTORY_SEPARATOR . &#039;[a-f0-9][a-f0-9]&#039; . DIRECTORY_SEPARATOR . &#039;[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]&#039; . &#039;[a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9][a-f0-9]*&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">DIRECTORY_SEPARATOR . &#039;[a-f0-9][a-f0-9]&#039; . DIRECTORY_SEPARATOR . &#039;[a-f0-9][a-f0-9]&#039; . DIRECTORY_SEPARATOR . self::ID_PATTERN . &#039;*&#039;</span>
 </code>
 
 
@@ -494,7 +556,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
@@ -555,7 +617,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/AbstractData.php"><a href="files/lib-data-abstractdata.html"><abbr title="lib/Data/AbstractData.php">AbstractData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -565,7 +627,7 @@ are a bit similar.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$_last_cache</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -605,7 +667,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -660,7 +722,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
@@ -718,7 +780,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -726,7 +788,7 @@ are a bit similar.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pasteid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$paste</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pasteid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$paste</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -787,7 +849,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">192</span>
+    <span class="phpdocumentor-element-found-in__line">197</span>
 
     </aside>
 
@@ -795,7 +857,7 @@ are a bit similar.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">createComment</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pasteid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$commentid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$comment</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">createComment</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pasteid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$commentid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$comment</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -870,7 +932,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -928,7 +990,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">164</span>
 
     </aside>
 
@@ -990,7 +1052,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">257</span>
+    <span class="phpdocumentor-element-found-in__line">264</span>
 
     </aside>
 
@@ -1066,7 +1128,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">394</span>
+    <span class="phpdocumentor-element-found-in__line">406</span>
 
     </aside>
 
@@ -1116,7 +1178,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">305</span>
+    <span class="phpdocumentor-element-found-in__line">312</span>
 
     </aside>
 
@@ -1185,7 +1247,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/AbstractData.php"><a href="files/lib-data-abstractdata.html"><abbr title="lib/Data/AbstractData.php">AbstractData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">153</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -1243,7 +1305,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/AbstractData.php"><a href="files/lib-data-abstractdata.html"><abbr title="lib/Data/AbstractData.php">AbstractData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -1308,7 +1370,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -1370,7 +1432,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">212</span>
+    <span class="phpdocumentor-element-found-in__line">217</span>
 
     </aside>
 
@@ -1432,7 +1494,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">274</span>
+    <span class="phpdocumentor-element-found-in__line">281</span>
 
     </aside>
 
@@ -1508,7 +1570,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">362</span>
+    <span class="phpdocumentor-element-found-in__line">377</span>
 
     </aside>
 
@@ -1570,19 +1632,24 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/AbstractData.php"><a href="files/lib-data-abstractdata.html"><abbr title="lib/Data/AbstractData.php">AbstractData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">182</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get next free slot for comment from postdate.</p>
+        <p class="phpdocumentor-summary">Get next free slot for comment from the creation timestamp</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">getOpenSlot</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$comments</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$postdate</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|string</span></code>
+                    <span class="phpdocumentor-signature__name">getOpenSlot</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$comments</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$created</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
-    
+        <section class="phpdocumentor-description"><p>The creation timestamp is usually a unix timestamp in seconds, but if a
+comment already exists at that timestamp, a number, separated by a dot is
+appended to it and incremented, then the function recurses until a free
+slot is found.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1593,7 +1660,7 @@ are a bit similar.</p>
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$postdate</span>
+                <span class="phpdocumentor-signature__argument__name">$created</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int|string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -1629,25 +1696,25 @@ are a bit similar.</p>
         class="phpdocumentor-element
             -method
             -protected
-                                    -static                    "
+                                                        "
 >
-    <h4 class="phpdocumentor-element__name" id="method_upgradePreV1Format">
-        upgradePreV1Format()
-        <a href="classes/PrivateBin-Data-AbstractData.html#method_upgradePreV1Format" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_sortComments">
+        sortComments()
+        <a href="classes/PrivateBin-Data-AbstractData.html#method_sortComments" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/AbstractData.php"><a href="files/lib-data-abstractdata.html"><abbr title="lib/Data/AbstractData.php">AbstractData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">203</span>
+    <span class="phpdocumentor-element-found-in__line">206</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Upgrade pre-version 1 pastes with attachment to version 1 format.</p>
+        <p class="phpdocumentor-summary">Sort comments chronologically, including collision suffixes.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">upgradePreV1Format</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$paste</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">sortComments</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$comments</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1655,7 +1722,7 @@ are a bit similar.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$paste</span>
+                <span class="phpdocumentor-signature__argument__name">$comments</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -1666,7 +1733,7 @@ are a bit similar.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="classes/PrivateBin-Data-AbstractData.html#method_upgradePreV1Format#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/PrivateBin-Data-AbstractData.html#method_sortComments#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -1678,13 +1745,6 @@ are a bit similar.</p>
                                                  <section class="phpdocumentor-description"><p>protected</p>
 </section>
 
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">static</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
                                     </dd>
                                             </dl>
 
@@ -1708,7 +1768,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">435</span>
+    <span class="phpdocumentor-element-found-in__line">447</span>
 
     </aside>
 
@@ -1772,7 +1832,7 @@ are a bit similar.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">419</span>
+    <span class="phpdocumentor-element-found-in__line">431</span>
 
     </aside>
 
@@ -1840,7 +1900,7 @@ High-trafic websites may want to deepen the directory structure (like Squid does
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">345</span>
+    <span class="phpdocumentor-element-found-in__line">356</span>
 
     </aside>
 
@@ -1906,7 +1966,7 @@ High-trafic websites may want to deepen the directory structure (like Squid does
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">519</span>
+    <span class="phpdocumentor-element-found-in__line">532</span>
 
     </aside>
 
@@ -1971,7 +2031,7 @@ High-trafic websites may want to deepen the directory structure (like Squid does
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">449</span>
+    <span class="phpdocumentor-element-found-in__line">461</span>
 
     </aside>
 
@@ -2040,7 +2100,7 @@ High-trafic websites may want to deepen the directory structure (like Squid does
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/Filesystem.php"><a href="files/lib-data-filesystem.html"><abbr title="lib/Data/Filesystem.php">Filesystem.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">469</span>
+    <span class="phpdocumentor-element-found-in__line">482</span>
 
     </aside>
 
@@ -2209,6 +2269,7 @@ High-trafic websites may want to deepen the directory structure (like Squid does
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li><a href="classes/PrivateBin-Data-Filesystem.html#constant_HTACCESS_LINE">HTACCESS_LINE</a></li>
+                                                    <li><a href="classes/PrivateBin-Data-Filesystem.html#constant_ID_PATTERN">ID_PATTERN</a></li>
                                                     <li><a href="classes/PrivateBin-Data-Filesystem.html#constant_PASTE_FILE_PATTERN">PASTE_FILE_PATTERN</a></li>
                                                     <li><a href="classes/PrivateBin-Data-Filesystem.html#constant_PROTECTION_LINE">PROTECTION_LINE</a></li>
                                             </ul>
@@ -2240,7 +2301,7 @@ High-trafic websites may want to deepen the directory structure (like Squid does
                                             <li><a href="classes/PrivateBin-Data-Filesystem.html#method_setValue">setValue()</a></li>
                                             <li><a href="classes/PrivateBin-Data-Filesystem.html#method__getExpiredPastes">_getExpiredPastes()</a></li>
                                             <li><a href="classes/PrivateBin-Data-AbstractData.html#method_getOpenSlot">getOpenSlot()</a></li>
-                                            <li><a href="classes/PrivateBin-Data-AbstractData.html#method_upgradePreV1Format">upgradePreV1Format()</a></li>
+                                            <li><a href="classes/PrivateBin-Data-AbstractData.html#method_sortComments">sortComments()</a></li>
                                             <li><a href="classes/PrivateBin-Data-Filesystem.html#method__dataid2discussionpath">_dataid2discussionpath()</a></li>
                                             <li><a href="classes/PrivateBin-Data-Filesystem.html#method__dataid2path">_dataid2path()</a></li>
                                             <li><a href="classes/PrivateBin-Data-Filesystem.html#method__get">_get()</a></li>

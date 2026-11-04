@@ -65,11 +65,19 @@
                 
             </li>
                     <li>
+                <a href="namespaces/privatebin-exception.html" class="">Exception</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/privatebin-model.html" class="">Model</a>
                 
             </li>
                     <li>
                 <a href="namespaces/privatebin-persistence.html" class="">Persistence</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/privatebin-proxy.html" class="">Proxy</a>
                 
             </li>
             </ul>
@@ -125,7 +133,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -159,21 +167,21 @@
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/PrivateBin-Controller.html#constant_GENERIC_ERROR">GENERIC_ERROR</a>
     <span>
-        &nbsp;= &#039;Paste does not exist, has expired or has been deleted.&#039;                            </span>
+        &nbsp;= &#039;Document does not exist, has expired or has been deleted.&#039;                            </span>
 </dt>
-<dd>show the same error message if the paste expired or does not exist</dd>
+<dd>show the same error message if the document expired or does not exist</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/PrivateBin-Controller.html#constant_MIN_PHP_VERSION">MIN_PHP_VERSION</a>
     <span>
-        &nbsp;= &#039;7.3.0&#039;                            </span>
+        &nbsp;= &#039;7.4.0&#039;                            </span>
 </dt>
 <dd>minimal required PHP version</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/PrivateBin-Controller.html#constant_VERSION">VERSION</a>
     <span>
-        &nbsp;= &#039;1.6.0&#039;                            </span>
+        &nbsp;= &#039;2.1.1&#039;                            </span>
 </dt>
 <dd>version</dd>
 
@@ -201,6 +209,13 @@
 <dd>error message</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/PrivateBin-Controller.html#property__is_deleted">$_is_deleted</a>
+    <span>
+                        &nbsp;: bool            </span>
+</dt>
+<dd>status message</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/PrivateBin-Controller.html#property__json">$_json</a>
     <span>
                         &nbsp;: string            </span>
@@ -210,14 +225,14 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/PrivateBin-Controller.html#property__model">$_model</a>
     <span>
-                        &nbsp;: <abbr title="\PrivateBin\model">model</abbr>            </span>
+                        &nbsp;: <a href="classes/PrivateBin-Model.html"><abbr title="\PrivateBin\Model">Model</abbr></a>            </span>
 </dt>
 <dd>Factory of instance models</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/PrivateBin-Controller.html#property__request">$_request</a>
     <span>
-                        &nbsp;: <abbr title="\PrivateBin\request">request</abbr>            </span>
+                        &nbsp;: <a href="classes/PrivateBin-Request.html"><abbr title="\PrivateBin\Request">Request</abbr></a>            </span>
 </dt>
 <dd>request</dd>
 
@@ -262,7 +277,7 @@
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd>Delete an existing paste</dd>
+<dd>Delete an existing document</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/PrivateBin-Controller.html#method__init">_init()</a>
@@ -270,6 +285,20 @@
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>initialize PrivateBin</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/PrivateBin-Controller.html#method__json_error">_json_error()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd>prepares JSON encoded error message</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/PrivateBin-Controller.html#method__json_result">_json_result()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd>prepares JSON encoded result message</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/PrivateBin-Controller.html#method__jsonld">_jsonld()</a>
@@ -283,14 +312,35 @@
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd>Read an existing paste or comment, only allowed via a JSON API call</dd>
+<dd>Read an existing document, only allowed via a JSON API call</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/PrivateBin-Controller.html#method__return_message">_return_message()</a>
+    <a href="classes/PrivateBin-Controller.html#method__setCacheHeaders">_setCacheHeaders()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd>prepares JSON encoded status message</dd>
+<dd>Turn off browser caching</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/PrivateBin-Controller.html#method__setDefaultLanguage">_setDefaultLanguage()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd>Set default language</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/PrivateBin-Controller.html#method__setDefaultTemplate">_setDefaultTemplate()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd>Set default template</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/PrivateBin-Controller.html#method__shortenerproxy">_shortenerproxy()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd>Proxies a link using the specified proxy class, and updates the status or error with the response.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/PrivateBin-Controller.html#method__view">_view()</a>
@@ -298,13 +348,6 @@
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Display frontend.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/PrivateBin-Controller.html#method__yourlsproxy">_yourlsproxy()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>proxies link to YOURLS, updates status or error with response</dd>
 
     </dl>
 
@@ -328,17 +371,17 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">show the same error message if the paste expired or does not exist</p>
+        <p class="phpdocumentor-summary">show the same error message if the document expired or does not exist</p>
 
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">GENERIC_ERROR</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;Paste does not exist, has expired or has been deleted.&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;Document does not exist, has expired or has been deleted.&#039;</span>
 </code>
 
 
@@ -373,7 +416,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -383,7 +426,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">MIN_PHP_VERSION</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;7.3.0&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;7.4.0&#039;</span>
 </code>
 
 
@@ -418,7 +461,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -428,7 +471,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">VERSION</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;1.6.0&#039;</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;2.1.1&#039;</span>
 </code>
 
 
@@ -479,7 +522,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -529,7 +572,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -569,6 +612,56 @@
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property__is_deleted">
+        $_is_deleted
+        <a href="classes/PrivateBin-Controller.html#property__is_deleted" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">81</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">status message</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$_is_deleted</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/PrivateBin-Controller.html#property__is_deleted#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">access</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>private</p>
+</section>
+
+                                    </dd>
+                                            </dl>
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property__json">
         $_json
         <a href="classes/PrivateBin-Controller.html#property__json" class="headerlink"><i class="fas fa-link"></i></a>
@@ -579,7 +672,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -629,7 +722,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">97</span>
 
     </aside>
 
@@ -637,7 +730,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\PrivateBin\model">model</abbr></span>
+        <span class="phpdocumentor-signature__type"><a href="classes/PrivateBin-Model.html"><abbr title="\PrivateBin\Model">Model</abbr></a></span>
     <span class="phpdocumentor-signature__name">$_model</span>
     </code>
 
@@ -679,7 +772,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -687,7 +780,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\PrivateBin\request">request</abbr></span>
+        <span class="phpdocumentor-signature__type"><a href="classes/PrivateBin-Request.html"><abbr title="\PrivateBin\Request">Request</abbr></a></span>
     <span class="phpdocumentor-signature__name">$_request</span>
     </code>
 
@@ -729,7 +822,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -779,7 +872,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -834,7 +927,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">125</span>
 
     </aside>
 
@@ -842,14 +935,24 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PrivateBin-Configuration.html"><abbr title="\PrivateBin\Configuration">Configuration</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
         <section class="phpdocumentor-description"><p>initializes and runs PrivateBin</p>
 </section>
 
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PrivateBin-Configuration.html"><abbr title="\PrivateBin\Configuration">Configuration</abbr></a>|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
@@ -892,7 +995,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">199</span>
+    <span class="phpdocumentor-element-found-in__line">277</span>
 
     </aside>
 
@@ -904,18 +1007,15 @@
 
     <div class="phpdocumentor-label-line">
         </div>
-        <section class="phpdocumentor-description"><p>POST contains one or both:
-data = json encoded FormatV2 encrypted text (containing keys: iv,v,iter,ks,ts,mode,adata,cipher,salt,ct)
-attachment = json encoded FormatV2 encrypted text (containing keys: iv,v,iter,ks,ts,mode,adata,cipher,salt,ct)</p>
-<p>All optional data will go to meta information:
-expire (optional) = expiration delay (never,5min,10min,1hour,1day,1week,1month,1year,burn) (default:never)
-formatter (optional) = format to display the paste as (plaintext,syntaxhighlighting,markdown) (default:syntaxhighlighting)
-burnafterreading (optional) = if this paste may only viewed once ? (0/1) (default:0)
-opendiscusssion (optional) = is the discussion allowed on this paste ? (0/1) (default:0)
-attachmentname = json encoded FormatV2 encrypted text (containing keys: iv,v,iter,ks,ts,mode,adata,cipher,salt,ct)
-nickname (optional) = in discussion, encoded FormatV2 encrypted text nickname of author of comment (containing keys: iv,v,iter,ks,ts,mode,adata,cipher,salt,ct)
-parentid (optional) = in discussion, which comment this comment replies to.
-pasteid (optional) = in discussion, which paste this comment belongs to.</p>
+        <section class="phpdocumentor-description"><p>POST contains:
+JSON encoded object with mandatory keys:
+v = 2 (version)
+adata (array)
+ct (base64 encoded, encrypted text)
+meta (optional):
+expire = expiration delay (never,5min,10min,1hour,1day,1week,1month,1year,burn) (default:1week)
+parentid (optional) = in discussions, which comment this comment replies to.
+pasteid (optional) = in discussions, which paste this comment belongs to.</p>
 </section>
 
     
@@ -934,6 +1034,14 @@ pasteid (optional) = in discussion, which paste this comment belongs to.</p>
                                                  <section class="phpdocumentor-description"><p>private</p>
 </section>
 
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                            
+                                             
                                     </dd>
                                             </dl>
 
@@ -957,11 +1065,11 @@ pasteid (optional) = in discussion, which paste this comment belongs to.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">272</span>
+    <span class="phpdocumentor-element-found-in__line">338</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Delete an existing paste</p>
+        <p class="phpdocumentor-summary">Delete an existing document</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -1022,7 +1130,7 @@ pasteid (optional) = in discussion, which paste this comment belongs to.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">190</span>
 
     </aside>
 
@@ -1070,6 +1178,145 @@ pasteid (optional) = in discussion, which paste this comment belongs to.</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method__json_error">
+        _json_error()
+        <a href="classes/PrivateBin-Controller.html#method__json_error" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">540</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">prepares JSON encoded error message</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">_json_error</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$error</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$error</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/PrivateBin-Controller.html#method__json_error#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">access</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>private</p>
+</section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\PrivateBin\JsonException">JsonException</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method__json_result">
+        _json_result()
+        <a href="classes/PrivateBin-Controller.html#method__json_result" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">557</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">prepares JSON encoded result message</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">_json_result</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dataid</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$other</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$dataid</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$other</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/PrivateBin-Controller.html#method__json_result#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">access</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>private</p>
+</section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\PrivateBin\JsonException">JsonException</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method__jsonld">
         _jsonld()
         <a href="classes/PrivateBin-Controller.html#method__jsonld" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1078,7 +1325,7 @@ pasteid (optional) = in discussion, which paste this comment belongs to.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">427</span>
+    <span class="phpdocumentor-element-found-in__line">498</span>
 
     </aside>
 
@@ -1136,11 +1383,11 @@ pasteid (optional) = in discussion, which paste this comment belongs to.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">308</span>
+    <span class="phpdocumentor-element-found-in__line">375</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Read an existing paste or comment, only allowed via a JSON API call</p>
+        <p class="phpdocumentor-summary">Read an existing document, only allowed via a JSON API call</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -1186,23 +1433,183 @@ pasteid (optional) = in discussion, which paste this comment belongs to.</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__return_message">
-        _return_message()
-        <a href="classes/PrivateBin-Controller.html#method__return_message" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method__setCacheHeaders">
+        _setCacheHeaders()
+        <a href="classes/PrivateBin-Controller.html#method__setCacheHeaders" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">485</span>
+    <span class="phpdocumentor-element-found-in__line">249</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">prepares JSON encoded status message</p>
+        <p class="phpdocumentor-summary">Turn off browser caching</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">_return_message</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$status</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$other</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">array()</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">_setCacheHeaders</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/PrivateBin-Controller.html#method__setCacheHeaders#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">access</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>private</p>
+</section>
+
+                                    </dd>
+                                            </dl>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method__setDefaultLanguage">
+        _setDefaultLanguage()
+        <a href="classes/PrivateBin-Controller.html#method__setDefaultLanguage" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">206</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Set default language</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">_setDefaultLanguage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/PrivateBin-Controller.html#method__setDefaultLanguage#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">access</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>private</p>
+</section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method__setDefaultTemplate">
+        _setDefaultTemplate()
+        <a href="classes/PrivateBin-Controller.html#method__setDefaultTemplate" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">226</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Set default template</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">_setDefaultTemplate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/PrivateBin-Controller.html#method__setDefaultTemplate#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">access</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>private</p>
+</section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method__shortenerproxy">
+        _shortenerproxy()
+        <a href="classes/PrivateBin-Controller.html#method__shortenerproxy" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">573</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Proxies a link using the specified proxy class, and updates the status or error with the response.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">_shortenerproxy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/PrivateBin-Proxy-AbstractProxy.html"><abbr title="\PrivateBin\Proxy\AbstractProxy">AbstractProxy</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$proxy</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1210,32 +1617,20 @@ pasteid (optional) = in discussion, which paste this comment belongs to.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$status</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                <span class="phpdocumentor-signature__argument__name">$proxy</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/PrivateBin-Proxy-AbstractProxy.html"><abbr title="\PrivateBin\Proxy\AbstractProxy">AbstractProxy</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$message</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$other</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">array()</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The instance of the proxy class.</p>
+</section>
+
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="classes/PrivateBin-Controller.html#method__return_message#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/PrivateBin-Controller.html#method__shortenerproxy#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -1266,7 +1661,7 @@ pasteid (optional) = in discussion, which paste this comment belongs to.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">335</span>
+    <span class="phpdocumentor-element-found-in__line">403</span>
 
     </aside>
 
@@ -1296,63 +1691,13 @@ pasteid (optional) = in discussion, which paste this comment belongs to.</p>
 </section>
 
                                     </dd>
-                                            </dl>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method__yourlsproxy">
-        _yourlsproxy()
-        <a href="classes/PrivateBin-Controller.html#method__yourlsproxy" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="lib/Controller.php"><a href="files/lib-controller.html"><abbr title="lib/Controller.php">Controller.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">467</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">proxies link to YOURLS, updates status or error with response</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">_yourlsproxy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$link</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$link</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/PrivateBin-Controller.html#method__yourlsproxy#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">access</span>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>private</p>
-</section>
-
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                            
+                                             
                                     </dd>
                                             </dl>
 
@@ -1482,6 +1827,7 @@ pasteid (optional) = in discussion, which paste this comment belongs to.</p>
                     <ul class="phpdocumentor-list -clean">
                                                     <li><a href="classes/PrivateBin-Controller.html#property__conf">$_conf<a href="classes/PrivateBin-Controller.html"></li>
                                                     <li><a href="classes/PrivateBin-Controller.html#property__error">$_error<a href="classes/PrivateBin-Controller.html"></li>
+                                                    <li><a href="classes/PrivateBin-Controller.html#property__is_deleted">$_is_deleted<a href="classes/PrivateBin-Controller.html"></li>
                                                     <li><a href="classes/PrivateBin-Controller.html#property__json">$_json<a href="classes/PrivateBin-Controller.html"></li>
                                                     <li><a href="classes/PrivateBin-Controller.html#property__model">$_model<a href="classes/PrivateBin-Controller.html"></li>
                                                     <li><a href="classes/PrivateBin-Controller.html#property__request">$_request<a href="classes/PrivateBin-Controller.html"></li>
@@ -1497,11 +1843,15 @@ pasteid (optional) = in discussion, which paste this comment belongs to.</p>
                                             <li><a href="classes/PrivateBin-Controller.html#method__create">_create()</a></li>
                                             <li><a href="classes/PrivateBin-Controller.html#method__delete">_delete()</a></li>
                                             <li><a href="classes/PrivateBin-Controller.html#method__init">_init()</a></li>
+                                            <li><a href="classes/PrivateBin-Controller.html#method__json_error">_json_error()</a></li>
+                                            <li><a href="classes/PrivateBin-Controller.html#method__json_result">_json_result()</a></li>
                                             <li><a href="classes/PrivateBin-Controller.html#method__jsonld">_jsonld()</a></li>
                                             <li><a href="classes/PrivateBin-Controller.html#method__read">_read()</a></li>
-                                            <li><a href="classes/PrivateBin-Controller.html#method__return_message">_return_message()</a></li>
+                                            <li><a href="classes/PrivateBin-Controller.html#method__setCacheHeaders">_setCacheHeaders()</a></li>
+                                            <li><a href="classes/PrivateBin-Controller.html#method__setDefaultLanguage">_setDefaultLanguage()</a></li>
+                                            <li><a href="classes/PrivateBin-Controller.html#method__setDefaultTemplate">_setDefaultTemplate()</a></li>
+                                            <li><a href="classes/PrivateBin-Controller.html#method__shortenerproxy">_shortenerproxy()</a></li>
                                             <li><a href="classes/PrivateBin-Controller.html#method__view">_view()</a></li>
-                                            <li><a href="classes/PrivateBin-Controller.html#method__yourlsproxy">_yourlsproxy()</a></li>
                                     </ul>
             </li>
                     </ul>

@@ -65,11 +65,19 @@
                 
             </li>
                     <li>
+                <a href="namespaces/privatebin-exception.html" class="">Exception</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/privatebin-model.html" class="">Model</a>
                 
             </li>
                     <li>
                 <a href="namespaces/privatebin-persistence.html" class="">Persistence</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/privatebin-proxy.html" class="">Proxy</a>
                 
             </li>
             </ul>
@@ -129,7 +137,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -309,14 +317,14 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <span>
                                 &nbsp;: int|string    </span>
 </dt>
-<dd>Get next free slot for comment from postdate.</dd>
+<dd>Get next free slot for comment from the creation timestamp</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/PrivateBin-Data-AbstractData.html#method_upgradePreV1Format">upgradePreV1Format()</a>
+    <a href="classes/PrivateBin-Data-AbstractData.html#method_sortComments">sortComments()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd>Upgrade pre-version 1 pastes with attachment to version 1 format.</dd>
+<dd>Sort comments chronologically, including collision suffixes.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/PrivateBin-Data-GoogleCloudStorage.html#method__getKey">_getKey()</a>
@@ -363,7 +371,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/AbstractData.php"><a href="files/lib-data-abstractdata.html"><abbr title="lib/Data/AbstractData.php">AbstractData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -373,7 +381,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$_last_cache</span>
-     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
     
     
@@ -413,7 +421,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -463,7 +471,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">19</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -513,7 +521,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -563,7 +571,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -618,7 +626,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -676,7 +684,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
@@ -684,7 +692,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pasteid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$paste</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pasteid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$paste</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -743,7 +751,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">196</span>
+    <span class="phpdocumentor-element-found-in__line">204</span>
 
     </aside>
 
@@ -751,7 +759,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">createComment</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pasteid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$commentid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$comment</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">createComment</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pasteid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$commentid</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$comment</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -824,7 +832,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">169</span>
 
     </aside>
 
@@ -880,7 +888,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">187</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
@@ -940,7 +948,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">228</span>
+    <span class="phpdocumentor-element-found-in__line">242</span>
 
     </aside>
 
@@ -1014,7 +1022,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">355</span>
+    <span class="phpdocumentor-element-found-in__line">363</span>
 
     </aside>
 
@@ -1064,7 +1072,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">305</span>
+    <span class="phpdocumentor-element-found-in__line">316</span>
 
     </aside>
 
@@ -1131,7 +1139,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/AbstractData.php"><a href="files/lib-data-abstractdata.html"><abbr title="lib/Data/AbstractData.php">AbstractData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">153</span>
+    <span class="phpdocumentor-element-found-in__line">152</span>
 
     </aside>
 
@@ -1189,7 +1197,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">252</span>
 
     </aside>
 
@@ -1252,7 +1260,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
     </aside>
 
@@ -1312,7 +1320,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">208</span>
+    <span class="phpdocumentor-element-found-in__line">216</span>
 
     </aside>
 
@@ -1372,7 +1380,7 @@ namespaces traffic_limiter and purge_limiter.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">269</span>
+    <span class="phpdocumentor-element-found-in__line">280</span>
 
     </aside>
 
@@ -1447,7 +1455,7 @@ namespaces traffic_limiter and purge_limiter.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">323</span>
+    <span class="phpdocumentor-element-found-in__line">334</span>
 
     </aside>
 
@@ -1507,19 +1515,24 @@ namespaces traffic_limiter and purge_limiter.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/AbstractData.php"><a href="files/lib-data-abstractdata.html"><abbr title="lib/Data/AbstractData.php">AbstractData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">182</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get next free slot for comment from postdate.</p>
+        <p class="phpdocumentor-summary">Get next free slot for comment from the creation timestamp</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">getOpenSlot</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$comments</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$postdate</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|string</span></code>
+                    <span class="phpdocumentor-signature__name">getOpenSlot</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$comments</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$created</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
-    
+        <section class="phpdocumentor-description"><p>The creation timestamp is usually a unix timestamp in seconds, but if a
+comment already exists at that timestamp, a number, separated by a dot is
+appended to it and incremented, then the function recurses until a free
+slot is found.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1530,7 +1543,7 @@ namespaces traffic_limiter and purge_limiter.</p>
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$postdate</span>
+                <span class="phpdocumentor-signature__argument__name">$created</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int|string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -1566,25 +1579,25 @@ namespaces traffic_limiter and purge_limiter.</p>
         class="phpdocumentor-element
             -method
             -protected
-                                    -static                    "
+                                                        "
 >
-    <h4 class="phpdocumentor-element__name" id="method_upgradePreV1Format">
-        upgradePreV1Format()
-        <a href="classes/PrivateBin-Data-AbstractData.html#method_upgradePreV1Format" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_sortComments">
+        sortComments()
+        <a href="classes/PrivateBin-Data-AbstractData.html#method_sortComments" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/AbstractData.php"><a href="files/lib-data-abstractdata.html"><abbr title="lib/Data/AbstractData.php">AbstractData.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">203</span>
+    <span class="phpdocumentor-element-found-in__line">206</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Upgrade pre-version 1 pastes with attachment to version 1 format.</p>
+        <p class="phpdocumentor-summary">Sort comments chronologically, including collision suffixes.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">upgradePreV1Format</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$paste</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">sortComments</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$comments</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1592,7 +1605,7 @@ namespaces traffic_limiter and purge_limiter.</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$paste</span>
+                <span class="phpdocumentor-signature__argument__name">$comments</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -1603,7 +1616,7 @@ namespaces traffic_limiter and purge_limiter.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="classes/PrivateBin-Data-AbstractData.html#method_upgradePreV1Format#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/PrivateBin-Data-AbstractData.html#method_sortComments#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -1615,13 +1628,6 @@ namespaces traffic_limiter and purge_limiter.</p>
                                                  <section class="phpdocumentor-description"><p>protected</p>
 </section>
 
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">static</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
                                     </dd>
                                             </dl>
 
@@ -1645,7 +1651,7 @@ namespaces traffic_limiter and purge_limiter.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -1709,7 +1715,7 @@ namespaces traffic_limiter and purge_limiter.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="lib/Data/GoogleCloudStorage.php"><a href="files/lib-data-googlecloudstorage.html"><abbr title="lib/Data/GoogleCloudStorage.php">GoogleCloudStorage.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">108</span>
 
     </aside>
 
@@ -1717,13 +1723,12 @@ namespaces traffic_limiter and purge_limiter.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">_upload</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$payload</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">_upload</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$payload</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
         <section class="phpdocumentor-description"><p>The entire payload is stored as a JSON document. The metadata is replicated
-as the GCS object's metadata except for the fields attachment, attachmentname
-and salt.</p>
+as the GCS object's metadata except for the field salt.</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1899,7 +1904,7 @@ and salt.</p>
                                             <li><a href="classes/PrivateBin-Data-GoogleCloudStorage.html#method_setValue">setValue()</a></li>
                                             <li><a href="classes/PrivateBin-Data-GoogleCloudStorage.html#method__getExpiredPastes">_getExpiredPastes()</a></li>
                                             <li><a href="classes/PrivateBin-Data-AbstractData.html#method_getOpenSlot">getOpenSlot()</a></li>
-                                            <li><a href="classes/PrivateBin-Data-AbstractData.html#method_upgradePreV1Format">upgradePreV1Format()</a></li>
+                                            <li><a href="classes/PrivateBin-Data-AbstractData.html#method_sortComments">sortComments()</a></li>
                                             <li><a href="classes/PrivateBin-Data-GoogleCloudStorage.html#method__getKey">_getKey()</a></li>
                                             <li><a href="classes/PrivateBin-Data-GoogleCloudStorage.html#method__upload">_upload()</a></li>
                                     </ul>
